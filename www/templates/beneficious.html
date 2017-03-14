@@ -1,0 +1,159 @@
+
+<!-- <ion-view view-title="Convenios">
+
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item backButtonClr" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item backButtonClr"  ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+
+    <div>
+        <img src="img/beneficos.jpg" class="coupenImgStyle bottomBorder imgHeight">
+
+        <div class="imageDivStyle spanTextStyle">
+          <span  class="imageTextStyle">
+          Convenios</span>
+
+        </div>
+
+      </div>
+
+
+   <div class="formularioDivStyle bottomBorder divMargin"></div>
+    <ion-list ng-repeat="cat in categories">
+
+    <div class="categoryPaddingStyle">
+            <div class="imageOverlay" ng-click="goBeneficiousCouponsPage(cat._id)">
+              <img src="img/beneficos.jpg" class="firstImageStyle subCatImg" ng-hide="!!cat.image">
+              <img ng-src="http://banistmo-backend.herokuapp.com/{{cat.image}}" class="firstImageStyle subCatImg" ng-show="!!cat.image" onError="this.src='img/beneficos.jpg'">
+              <div class="categoryTExtStyle">
+                <span class="categorySpanStyle">
+                  {{cat.category}}
+                </span>
+              </div>
+            </div>
+    </div>
+    </ion-list>
+  </ion-content>
+
+</ion-view> -->
+
+<ion-view view-title="Convenios">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item backButtonClr" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item backButtonClr"  ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content overflow-scroll="true">
+
+      <div>
+          <img src="img/convenios-home-crop.jpg" class="coupenImgStyle bottomBorder" style="height: 245px !important;">
+          <div  style="position: relative;left: 0;width: 100%;top: -42px;background-color: #ffffff;opacity: 0.6;height: 37px;padding: 8px;">
+            <span  style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">
+            Convenios</span>
+          </div>
+      </div>
+
+   <div class="formularioDivStyle bottomBorder divMargin" style="height: 22px;margin-top: -49px;"></div>
+
+   <div>
+     <p  style="padding: 20px;font-weight: 500;text-align: justify;">
+       La Calidad de Vida de nuestros colaboradores es primordial.<br/>
+      Como parte del portafolio de beneficios en productos y servicios, que te permita tener una vida saludable, te invitamos a conocer y disfrutar de los convenios que tenemos para ti.<br/>
+      Recuerda que para obtener todos los beneficios de los convenios debes presentar tu carnet de colaborador.
+     </p>
+   </div>
+    <ion-list ng-repeat="cat in categories">
+      <div class="categoryPaddingStyle">
+
+              <div class="imageOverlay"  ng-click="goBeneficiousCouponsPage(cat._id,cat.category)">
+                <!-- ng-click="goBeneficiousSubCategoryPage(cat._id)" -->
+                <img ng-src="{{cat.image}}" class="firstImageStyle" style="height: 145px;margin-top: -7px;" ng-show="!!cat.image" onError="this.src='img/beneficos.jpg'">
+
+                <!-- <img src="img/beneficos.jpg" class="firstImageStyle" style="height: 145px;margin-top: -7px;" ng-hide="!!cat.image"> -->
+                <div  style="position: absolute;bottom: 3%;left: 0;width: 100%;text-align: center; background: rgba(0, 0, 0, 0.4) !important;margin-top: 55%;height: 103%;">
+                  <span style="color: white;font-size: 25px !important;letter-spacing: -1px;font-weight: bold;position: relative;top: 60px;">
+                    {{cat.category}}
+                  </span>
+                </div>
+              </div>
+      </div>
+    </ion-list>
+  </ion-content>
+
+</ion-view>
+
+
+
+
+
+<!-- <ion-view view-title="Convenios">
+  <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title>
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+
+    <div>
+        <img src="img/beneficos.jpg" class="coupenImgStyle bottomBorder">
+        <div class="imageDivStyle">
+        <img src="img/beneficos.jpg" class="coupenImgStyle bottomBorder" style="height: 245px !important;">
+        <div class="imageDivStyle" style="padding: 14px;top: -53px;height: 49px;">
+          <span class="imageTextStyle">
+          Convenios</span>
+        </div>
+      </div>
+
+
+   <div class="formularioDivStyle bottomBorder"></div>
+    <ion-list ng-repeat="cat in categories">
+
+    <div class="row" style="padding: 0px;">
+
+   <div class="formularioDivStyle bottomBorder" style="margin-top: -52px;"></div>
+    <ion-list ng-repeat="cat in categories">
+
+    <div style="padding-top: 22px;">
+            <div class="imageOverlay" ng-click="goBeneficiousSubCategoryPage(cat._id)">
+              <img src="img/beneficos.jpg" class="firstImageStyle" ng-hide="!!cat.image">
+              <img ng-src="http://banistmo-backend.herokuapp.com/{{cat.image}}" class="firstImageStyle" style="height: 111px;" ng-show="!!cat.image" onError="this.src='img/beneficos.jpg'">
+              <div  style="position: absolute;bottom: 45%;left: 0;width: 100%;text-align: center;">
+                <span  style="color: white;font-size: 25px !important;letter-spacing: -1px;font-weight: bold;">
+                  {{cat.category}}
+                </span>
+              </div>
+            </div>
+    </div>
+
+    </ion-list>
+
+
+  </ion-content>
+
+</ion-view> -->

@@ -1,0 +1,45 @@
+<ion-view title="Login" hide-nav-bar="true" >
+	<ion-content overflow-scroll="true"  id="logincontent">
+		<!-- scroll="false" -->
+
+		<div class="row" style="padding-top: 142px;">
+			<div class="col col-10"></div>
+			<div class="row col col-80">
+				<div class="row">
+					<div class="col col-100" style="text-align: center;">
+						<img src="img/icono-login.png" style="height: 120px;">
+					</div>
+			  </div>
+			<div class="row">
+				<div class="col col-100" style="text-align: center;">
+				<span style="color:#12a7dd;font-size: 21px;font-weight: 600;">ACCESO</span>
+				</div>
+	  	</div>
+				<form class="list">
+					<label class="item item-input" >
+						<i class="icon ion-person placeholder-icon" style="color: #12a7dd;"></i>
+						<input type="text" ng-model="loginData.employId" placeholder="Usuario" required>
+					</label><br/>
+					<label class="item item-input">
+							<i class="icon ion-ios-locked placeholder-icon" style="color: #12a7dd;"></i>
+							<input type="password" ng-model="loginData.password" placeholder="Clave">
+					</label>
+					<div class="row">
+							<ion-checkbox style="padding-left: 50px;font-size: 11px;margin-left: -16px;background-color: #ccecfc;border: none;width: 65%;color: #12a7dd;" ng-model="remember">Recordar clave</ion-checkbox>
+							<div class="col" style="padding-top: 13px;font-size: 11px;text-align: right;color: #12a7dd;" ng-click="forgotPassword()">Olvido su clave?</div>
+					</div>
+					<div class="row">
+						<div class="col col-25"></div>
+						<div class="col col-50">
+						 <button class="button  button-block" style="background-color: #12a7dd;" ng-click="Login()">ENTRAR</button>
+					 </div>
+					 <div class="col col-25"></div>
+					</div>
+				</form>
+
+	  	</div>
+				<div class="col col-10"></div>
+	  </div>
+		</ion-content>
+
+	</ion-view>

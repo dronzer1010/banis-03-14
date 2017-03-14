@@ -1,0 +1,36 @@
+<ion-view view-title="{{detailData.title}}">
+  <!-- {{detailData.startDate | date:'dd/MM/yyyy'}} -->
+
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <div class="card">
+      <!-- <div style="padding-left: 15px;">{{detailData.title}}</div><br/> -->
+      <!-- <div style="padding-left: 15px;">Tiempo de reflexion</div><br/> -->
+      <div>
+        <img ng-src="{{detailData.image}}" class="coupenImgStyle imgHeight" style="margin-top: 0px;height: 230px;border-bottom: none;" onError="this.src='img/beneficos.png'">
+        <!-- <img src="img/beneficos.jpg" class="coupenImgStyle imgHeight" style="margin-top: 0px;height: 150px;border-bottom: none;"> -->
+        <div style="font-weight: 600;border-bottom: 1px solid black;padding: 7px;">{{detailData.title}}</div><br/>
+      </div>
+      <!-- <div style="color:#00428a;background-color: #ffdd00;padding-left: 20px;height: 27px;padding-top: 2px;margin-top: -5px;">From : {{detailData.startDate | date:'dd/MM/yyyy'}} </div>
+      <div style="height: 50px;padding-top: 15px;padding-left: 52px;">Entrance:  {{detailData.entrance}}</div>
+      <div style="color:#00428a;background-color: #ffdd00;padding-left: 20px;height: 27px;padding-top: 2px;">Until :{{detailData.EndDate | date:'dd/MM/yyyy'}} </div>
+      <div style="height: 50px;padding-top: 15px;padding-left: 52px;">To:  {{detailData.to}}</div>
+      <div style="color:#00428a;background-color: #ffdd00;padding-left: 20px;height: 27px;padding-top: 2px;">Description </div> -->
+      <p style="padding: 17px;">{{detailData.description}}</p>
+
+   </div>
+
+  </ion-content>
+
+</ion-view>

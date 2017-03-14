@@ -1,0 +1,57 @@
+<ion-view view-title="Contactos Detail Page">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content  style="border-bottom: 2px solid #00428a;">
+        <div class="coupenHeaderStyle">{{contactosData.name}}</div>
+        <div class="row">
+          <div class="col col-20"></div>
+          <div class="col col-60" >
+            <img src="img/formulario_1.png" style="width: 100%;border: 1px solid #00428a;" ng-hide="!!contactosData.image">
+            <img ng-src="http://banistmo-backend.herokuapp.com/{{contactosData.image}}" style="width: 100%;border: 1px solid #00428a;" ng-if="!!contactosData.image">
+          </div>
+          <div class="col col-20"></div>
+       </div>
+   <div class="formularioDivStyle" style="margin-top: -15px !important;"></div>
+
+
+  <h3 style="padding-left: 37px;font-size: 15px;font-weight: 600;color: #00428a;font-size: 19px !important;">CONTACT DETAIL</h3>
+  <div class="card">
+
+   <div class="item item-text-wrap">
+     <div class="row">
+       <div class="col col-40" style="font-weight: 600;">name:</div>
+       <div class="col col-60"><span>{{contactosData.name}}</span></div>
+    </div>
+    <div class="row">
+      <div class="col col-40" style="font-weight: 600;">Position:</div>
+      <div class="col col-60">{{contactosData.designation.rank}}</div>
+   </div>
+   <div class="row">
+     <div class="col col-40" style="font-weight: 600;">Email:</div>
+     <div class="col col-60">{{contactosData.email}}</div>
+  </div>
+  <div class="row">
+    <div class="col col-40" style="font-weight: 600;">Phone:</div>
+    <div class="col col-60">{{contactosData.phoneNumber}}</div>
+ </div>
+   </div>
+</div>
+
+
+   <!-- <div class="formularioParaStyle" style="color: black;">By default, side menus are hidden underneath their side menu content and can be opened by swiping the content left or right or by toggling a button to show the side menu. Additionally, by adding the exposeAsideWhen attribute directive to an ionSideMenu element directive, </div> -->
+
+  </ion-content>
+</ion-view>

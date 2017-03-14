@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.conectados.banistmo"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.conectados.banistmo"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.conectados.banistmo"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.conectados.banistmo"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.conectados.banistmo"
+        },
+        "cordova-plugin-wkwebview-engine": {
+            "PACKAGE_NAME": "com.conectados.banistmo"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.conectados.banistmo"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.conectados.banistmo"
+        }
+    },
+    "dependent_plugins": {}
+}

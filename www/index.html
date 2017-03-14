@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/controllers.js"></script>
+
+    <!-- for controllers -->
+
+    <script src="js/controllers/welcomeController.js"></script>
+    <script src="js/controllers/beneficiousController.js"></script>
+    <script src="js/controllers/induccionController.js"></script>
+    <script src="js/controllers/formularioController.js"></script>
+    <script src="js/controllers/noticasController.js"></script>
+    <script src="js/controllers/moreController.js"></script>
+    <script src="js/controllers/noticiasPageController.js"></script>
+    <script src="js/controllers/noticiasDetailPageController.js"></script>
+    <script src="js/controllers/contactosController.js"></script>
+    <script src="js/controllers/contactosDetailController.js"></script>
+    <script src="js/controllers/calendarioController.js"></script>
+    <script src="js/controllers/calendarioCreateEventController.js"></script>
+    <script src="js/controllers/vacacionesController.js"></script>
+    <script src="js/controllers/weatherController.js"></script>
+    <script src="js/controllers/cuentaController.js"></script>
+    <script src="js/controllers/induccionCourseController.js"></script>
+    <script src="js/controllers/induccionCourseContentController.js"></script>
+    <script src="js/controllers/induccionCourseDinamicaController.js"></script>
+    <script src="js/controllers/noticiasDetailController.js"></script>
+    <script src="js/controllers/calendarioDetailController.js"></script>
+    <script src="js/controllers/reconocimientoController.js"></script>
+    <script src="js/controllers/reconocimientoSubmenuController.js"></script>
+    <script src="js/controllers/nominacionIndividualController.js"></script>
+    <script src="js/controllers/ghContigoController.js"></script>
+    <script src="js/controllers/entertanmentoController.js"></script>
+    <script src="js/controllers/directoryController.js"></script>
+    <script src="js/controllers/nominacionSelectPageController.js"></script>
+    <script src="js/controllers/nominacionCompletePageController.js"></script>
+    <script src="js/controllers/vacantesController.js"></script>
+    <script src="js/controllers/vacantesSubMenuController.js"></script>
+    <script src="js/controllers/vacantesDetailController.js"></script>
+    <script src="js/controllers/preguntasFrecuentesController.js"></script>
+    <script src="js/controllers/nominacionIndividualSelectController.js"></script>
+    <script src="js/controllers/SegmentostaffaddController.js"></script>
+    <script src="js/controllers/CalendariodeController.js"></script>
+    <script src="js/controllers/BeneficiosController.js"></script>
+
+
+    <script src="js/controllers/loginController.js"></script>
+    <script src="js/controllers/mainMenuController.js"></script>
+    <script src="js/controllers/beneficiosCoupenController.js"></script>
+    <script src="js/controllers/beneficiosDetailController.js"></script>
+    <script src="js/controllers/formacionSubmenuController.js"></script>
+    <script src="js/controllers/reconocimientoSubmenuController.js"></script>
+
+    <script src="js/controllers/beneficiousSubCategoryController.js"></script>
+
+
+
+    <script src="js/services/UserService.js"></script>
+    <script src="js/services/VacancyService.js"></script>
+    <script src="js/services/CouponService.js"></script>
+    <script src="js/services/NoticiasService.js"></script>
+    <script src="js/services/NoticiasPageService.js"></script>
+    <script src="js/services/ContactosService.js"></script>
+    <script src="js/services/EventService.js"></script>
+    <script src="js/services/SessionService.js"></script>
+    <script src="js/services/VacacionesService.js"></script>
+    <script src="js/services/WeatherService.js"></script>
+    <script src="js/services/WeatherFactory.js"></script>
+
+
+
+
+
+    <script src="js/services/IonicPopupService.js"></script>
+    <script src="js/services/CommonValidateService.js"></script>
+
+
+    <script src="js/filters/hrefToJS.js"></script>
+    <script src="js/filters/formatTemp.js"></script>
+
+    <script src="js/directive/weatherDay.js"></script>
+    <script src="js/directive/weatherIcon.js"></script>
+    <script src="js/directive/ngFiles.js"></script>
+
+
+    <script src="js/services.js"></script>
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/1.1.1/css/ionic.min.css"/>
+    <link rel="stylesheet" href="lib/ionic-calendar/dist/css/calendar.min.css"/>
+    <script src="http://code.ionicframework.com/1.1.1/js/ionic.bundle.min.js"></script>
+    <script src="lib/ionic-calendar/dist/js/calendar-tpls.min.js"></script>
+
+    <!-- for date time picker -->
+    <script src="lib/ion-datetime-picker/release/ion-datetime-picker.min.js"></script>
+    <link href="lib/ion-datetime-picker/release/ion-datetime-picker.min.css" rel="stylesheet">
+
+    <!-- jquery, moment, and angular have to get included before fullcalendar -->
+    <!-- <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/moment/min/moment.min.js"></script> -->
+    <!-- <script type="text/javascript" src="lib/angular/angular.min.js"></script> -->
+    <!-- <script type="text/javascript" src="lib/angular-ui-calendar/src/calendar.js"></script>
+    <script type="text/javascript" src="lib/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="lib/fullcalendar/dist/gcal.js"></script>
+    <link rel="stylesheet" href="lib/fullcalendar/dist/fullcalendar.css"/> -->
+
+
+
+  </head>
+  <body ng-app="starter">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable">
+      <!-- <ion-nav-back-button>
+      </ion-nav-back-button> -->
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

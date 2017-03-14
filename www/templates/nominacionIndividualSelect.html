@@ -1,0 +1,47 @@
+<ion-view view-title="Nominacion Individual">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item backButtonClr"  ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item backButtonClr" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <!-- <div style="font-size: 15px;font-weight: 700;padding-top: 13%;padding-left: 6%;padding-bottom: 11px;">Seleccionar o agregar tu Nominado</div> -->
+    <div style="margin-top: 7%;color: #00428a; font-size: 14px;font-weight: 600;padding-left: 6%;padding: 17px;background-color: #c0e3ec;margin-left: 3%;margin-right: 3%;" ng-click="goNominacionSelect()">Liderazgo destacable</div><br/>
+    <div style="padding-left: 10%;font-weight: bolder;font-size: 12px;">
+      <div ng-click="goNominacionVotarPage()">CABALLERO GUEVARA, MIGUEL ALBERTO</div>
+      <div ng-click="goNominacionVotarPage()">CABRERA ESPINOSA. MIGUEL ANGEL</div>
+      <div ng-click="goNominacionVotarPage()">CAMRENA GOMEZ, MIGUEL ALEXIS</div>
+      <div ng-click="goNominacionVotarPage()">CAPRILES DAWSON, MIGUEL JOSE</div>
+      <div ng-click="goNominacionVotarPage()">CARVAJAL DAVALOS, MIGUEL SALOMON</div>
+      <div ng-click="goNominacionVotarPage()">CRICHLOW DRAKES, LUIS MIGUEL </div>
+      <div ng-click="goNominacionVotarPage()">ESCALONA ROJAS, PEDRO MIGUEL </div>
+      <div ng-click="goNominacionVotarPage()">FLORES MORON, BRASIL MIGUEL </div>
+      <div ng-click="goNominacionVotarPage()">GONZALEZ AROSEMENA, MIGUEL ANGEL</div>
+      <div ng-click="goNominacionVotarPage()">GONZALEZ SANCHEZ, GIOLISA MIGUELDA</div>
+      <div ng-click="goNominacionVotarPage()">HERNANDEZ MORA, MIGUEL ANGEL</div>
+      <div ng-click="goNominacionVotarPage()">LOO PAN, JUAN MIGUEL </div>
+      <div ng-click="goNominacionVotarPage()">MARTINEZ BATISTA, JOSE MIGUEL</div>
+      <div ng-click="goNominacionVotarPage()">PAEZ AGAMEZ, MIGUEL ANGEL</div>
+    </div><br/>
+
+    <!-- <button style="margin:0;"  class="button button-energized  button-block" ng-click="goDetailPage()" style="font-size: 13px; min-height: 1px;width: 36%;">
+        Nominar
+    </button> -->
+    <div style="padding-left: 4%;padding-right: 4%;">
+         <center>
+           <button class="button button-block icon-left ion-plus-round" ng-click="goNominacionSelectPage()" style="background-color: #c0e3ec;color: #00428a;">Agregar a tu nominado</button>
+       </center>
+    </div>
+
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,132 @@
+<!--
+  This view is for weather_2 state (app.js)
+  cities is a $scope variable from WeatherCtrl (controllers.js)
+  Cities service provides list of cities (service.js)
+  getMainWeekdayAndDate(), getTemp(), convertWindDirection(), getWeekday() are $scope functions come from WeatherCtrl
+-->
+<!-- <ion-view view-title="{{ cityName }}">
+  <ion-content class="stable-bg weather weather-2">
+
+    <ion-slide-box on-slide-changed="changeTitle(cities[$index])">
+
+      <ion-slide ng-repeat="city in cities">
+        <div class="weather-header padding-top text-center light-bg"  style="background: url('img/weather/{{ city.id }}.jpg')">
+
+          <div class="weather-temp padding-bottom">
+
+            <div class="padding-left pull-left light text-left">
+
+              <span class="text-5x text-baseline">{{ getTemp(city.current.main.temp) }}</span>
+              <i class="wi wi-celsius text-3x text-top" ng-show="useCelsius"></i>
+              <i class="wi wi-fahrenheit text-3x text-top" ng-hide="useCelsius"></i>
+
+              <i class="wi text-2x text-baseline" ng-class="city.current.weather.icon"></i>
+              <strong class="uppercase text-baseline">
+                {{ getMainWeekdayAndDate(city.current.dt )}}
+              </strong>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="row padding-top text-center stable-bg">
+          <div class="col">
+            <i class="wi wi-small-craft-advisory"></i>
+            {{ city.current.wind.speed }} km/h
+          </div>
+          <div class="col">
+            <i class="wi wi-wind wi-towards-{{ convertWindDirection(city.current.wind.deg) }}"></i>
+            <span class="uppercase">{{ convertWindDirection(city.current.wind.deg) }}</span>
+          </div>
+          <div class="col">
+            <i class="wi wi-umbrella"></i>
+            {{ city.current.main.humidity }} %
+          </div>
+        </div>
+
+        <div class="row weather-daily padding-top stable-bg">
+
+          <div class="col text-center" ng-repeat="day in city.list">
+            <div class="padding-top gray uppercase">{{ getWeekday(day.dt) }}</div>
+            <div class="padding-top text-2x">
+              <i class="wi" ng-class="day.weather[0].icon"></i>
+            </div>
+            <div class="padding-top text-1x5">
+              {{ getTemp(day.main.temp) }} <sup>o</sup>
+            </div>
+          </div>
+
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+</ion-view> -->
+
+
+<ion-view view-title="{{ cityName }}">
+  <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title>
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+
+
+  <ion-content  style="background-color: #104697;" overflow-scroll="true">
+    <div>
+        <div class="coupenHeaderStyle">Weather</div>
+        <div>
+            <img src="img/weather1.png" class="coupenImgStyle">
+       </div>
+   </div>
+   <div class="formularioDivStyle"></div>
+   <div>
+   <div class="row">
+     <div class="col col-70">
+       <label class="item item-input" style="height: 40px;border-radius: 6px;">
+         <i class="icon ion-search placeholder-icon" style="color: #305b9e;"></i>&nbsp
+         <input type="text" ng-model="searchText" placeholder="Enter City" required>
+       </label>
+     </div>
+     <div class="col col-30">
+       <div class="padding">
+           <button class="button  button-block" ng-click="searchCity(searchText)" style="margin-top: -12px;min-height: 0px;border-radius: 6px;width: 85%;float: right;background-color: #305b9e;color: white;border-color: #305b9e;">
+               Search
+           </button>
+       </div>
+     </div>
+
+   </div>
+   <div>
+     <strong class="uppercase text-baseline" style="font-size: 15px;padding-left: 10px;color: white;">
+               {{date  | date:'MMM d, y'}}
+         </strong>
+   </div>
+
+   <h5 style="color: white;padding-left: 10px;">{{ weather.city }}</h5>
+   <div class="weather-scroll" style="width: 100%;">
+     <!-- overflow-x: scroll !important; -->
+    <div class="row">
+      <weather-day
+          ng-repeat="day in  weather.days track by $index" day="day" city="searchText">
+      </weather-day>
+    </div>
+
+  </div>
+
+</div>
+
+  </ion-content>
+
+</ion-view>

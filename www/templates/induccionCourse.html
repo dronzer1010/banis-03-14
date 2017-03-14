@@ -1,0 +1,66 @@
+<ion-view view-title="Formacion">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item backButtonClr"  ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item backButtonClr" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+
+      <ion-item class="item-remove-animate item-avatar induccionBorder"  type="item-text-wrap">
+        <img src="img/write-board.png" class="imgStyle">
+        <div class="row rowStyle">
+          <div class="col col-75">
+            <h3>Curso 1</h3>
+          </div>
+          <div class="col alignRightDiv"></div>
+        </div>
+      </ion-item>
+        <p class="induccionParaStyle induccionCoursePara">
+          En este curso aprendera sobre la cultura de banistmo Te invitamos a ver los videos y descargar las presenta-ciones.Luego podras realzar una dinamica para aprobar el curso.
+        </p>
+      </div>
+      <ion-list>
+
+
+        <ion-item class="item-remove-animate item-avatar induccionBorder colorStyle"  type="item-text-wrap" ng-click="goCourseContentPresentationList()">
+          <img src="img/write-board.png" class="imgStyle">
+          <div class="row rowStyle">
+            <div class="col col-75">
+              <h3>Presentaciones</h3>
+            </div>
+            <div class="col alignRightDiv"></div>
+          </div>
+        </ion-item>
+        <ion-item class="item-remove-animate item-avatar induccionBorder colorStyle"  type="item-text-wrap" ng-click="goCourseContentVideoList()">
+          <img src="img/play-button.png" class="imgStyle">
+          <div class="row rowStyle">
+            <div class="col col-75">
+              <h3>Videos</h3>
+            </div>
+            <div class="col alignRightDiv"></div>
+          </div>
+        </ion-item>
+        <ion-item class="item-remove-animate item-avatar induccionBorder colorStyle"  type="item-text-wrap" ng-click="goCourseDinamica()">
+          <img src="img/test-quiz.png" class="imgStyle">
+          <div class="row rowStyle">
+            <div class="col col-75">
+              <h3>Dinamica</h3>
+            </div>
+            <div class="col alignRightDiv"></div>
+          </div>
+        </ion-item>
+
+
+      </ion-list>
+  </ion-content>
+
+</ion-view>

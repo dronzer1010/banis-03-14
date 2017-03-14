@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1057888926011",
+    "firebase_url": "https://conectados-push.firebaseio.com",
+    "project_id": "conectados-push",
+    "storage_bucket": "conectados-push.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057888926011:android:b22993b614309368",
+        "android_client_info": {
+          "package_name": "com.conectados.banistmo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057888926011-vhmv0h9dpv6onlk6d0qcl142qes0e0d2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWCZyA4GddIGaDtzSWfRmt6amYuPSC4vE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+<ion-view view-title="{{catName}}">
+<!--<ion-view view-title="{{coupens.category}}"> original-->
+  <!-- beneficiousCoupons -->
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div  ng-repeat="coupens in coupensList" ng-click="goDetailPage(coupens)">
+        <!-- <div class="coupenHeaderStyle">{{coupens.title}} </div> -->
+        <div  style="border-bottom: 1px solid #00428a;">
+            <!-- <img src="img/coupen_1.png" class="coupenImgStyle" ng-hide="!!coupens.image" style="border: none !important;"> -->
+            <img ng-src="{{coupens.image}}" class="coupenImgStyle" ng-show="!!coupens.image" style="border: none !important;">
+            <!-- onError="this.src='img/coupen_1.png'" -->
+            <div style="height: 51px;color:#00428a;">
+
+                <div style="border-bottom: 1px solid #00428a;color:#00428a;">
+              <span>{{coupens.title}}</span>
+
+            </div>
+                </div>
+       </div>
+
+    </div>
+
+  </ion-content>
+
+</ion-view>

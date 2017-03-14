@@ -1,0 +1,21 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive" align-title="center">
+        <h1 class="title" style="font-weight: 700;color:#FFF;font-size: 17px;">Supervisor inmediato</h1>
+        <button class="button" ng-click="closeDirectManagerModal()" style="color: #00428a;background-color: white;border: none;font-weight: bold;font-size: 18px;">X</button>
+    </ion-header-bar>
+    <ion-content>
+   	<div class="list" style="padding-top: 0px;">
+      <div class="item item-input-inset" style="border: none;">
+        <label class="item-input-wrapper">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" ng-model="directMangers.title"  placeholder="BusCar">
+        </label>
+      </div>
+ 	</div>
+     <ion-list ng-repeat="manager in directManagers | filter:directMangers.title">
+       <ion-item class="item" style="border-top:none;color:#00428a;" type="item-text-wrap" ng-click="changeManager([manager._id],[manager.name])">
+         <h2 style="font-weight: 600;color:#00428a;">{{manager.name}}</h2>
+       </ion-item>
+     </ion-list>
+    </ion-content>
+</ion-modal-view>

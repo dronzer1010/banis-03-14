@@ -1,0 +1,681 @@
+<ion-view view-title="Preguntas Frecuentes">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="fontHeaderColor" overflow-scroll="true">
+
+    <div>
+        <img src="img/preguntas-frecuentes-crop.jpg" class="coupenImgStyle bottomBorder" style="height: 245px !important;">
+        <div  style="position: relative;left: 0;width: 100%;top: -42px;background-color: #ffffff;opacity: 0.6;height: 37px;padding: 8px;">
+          <span  style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">
+          Preguntas Frecuentes</span>
+        </div>
+      </div>
+    <p style="color:black;padding-left: 16px;padding-right: 16px;margin-top: -18px;text-align: justify;">Gestión de lo Humano pone a tu disposición la sección de Preguntas Frecuentes, en donde encontrarás soluciones rápidas a tus consultas.<br/>
+      Coméntanos tu experiencia y sugerencias con las preguntas frecuentes, generando un ticket por la herramienta de GH Contigo Casos
+    </p>
+
+
+    <div>
+       <div class="form-group"  ng-click="showOne()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+          Compensación e Incentivos
+          <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show1===false"></i>
+          <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show1===true"></i>
+       </div>
+       <div class="form-group" ng-show="show1" style="color:black; padding-top:10px;">
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Por qué recibí vales de menos, si mi salario aumento?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si usted recibió un ajuste de salario en la 2da quincena del mes anterior, le corresponde la mitad de la diferencia, si su caso fuese de $50 a $75 en vale Panamá, la diferencia es $25 en vale Panamá, como solo laboró la mitad del mes, con su nuevo salario, le corresponde la mitad de la diferencia que serían $12.50.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo actualizo mi ubicación para que mi vale, me llegue a la dirección correcta?	</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para que su vale Panamá llegue a su actual depto./ubicación, debe solicitar a su jefe inmediato, solicite el cambio de centro de costo a su socio estratégico (los cambios deben estar debidamente aprobados).</p>
+
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si usted es de Sucursales, debe informarle a su gerente de sucursal, para que realice la solicitud al Analista de Admón. de Sucursales de su Regional.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Es importante pueda asegurarse que la solicitud se realice antes de fin de mes, para que su vale Panamá llegue correctamente.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Mis vales se deterioraron, rasgaron, lavaron, se pueden reembolsar?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Se puede reembolsar los vales, en el próximo mes en su Valera regular, debe enviar los vales deteriorados en una bolsa de seguridad dirigidos a Jeannette Gómez / Compensación / Casa Matriz - Piso 6</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Me aparece un error al abrir mi descripción de puesto?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si al abrir su descripción de puesto, le arroja un mensaje de error, favor de notificar al correo electrónico: jeannette.s.gomez@banistmo.com</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Mi descripción de puesto no corresponde con la descripción de mi actual puesto?	</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si al abrir su descripción de puesto y no corresponda con su actual puesto, favor de notificar al correo electrónico: jeannette.s.gomez@banistmo.com</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿No fue depositado mi Paga variable o Motivator?	</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si no recibió su pago de Variable o Motivator, favor de notificar al correo electrónico: david.e.chichaco@banistmo.com</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Recibí incompleto mi pago de mi Paga variable o Motivator?	</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si no recibió su pago completo de Variable o Motivator, favor de notificar al correo electrónico: jeannette.s.gomez@banistmo.com</p>
+
+
+       </div>
+    </div><br/>
+
+    <div>
+       <div class="form-group"  ng-click="showTwo()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+          Valoración de desempeño
+          <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show2===false"></i>
+          <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show2===true"></i>
+       </div>
+       <div class="form-group" ng-show="show2" style="color:black; padding-top:10px;">
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuántas fases tiene el proceso de valoración de desempeño?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El proceso de valoración consta de tres fases consecutivas:</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Autovaloración:proceso en donde cada uno de los integrantes de la organización realiza un ejercicio de reflexión donde se plasma la percepción que se tiene sobre el desempeño propio frente a las tres competencias corporativas y en el caso de que se maneje un equipo, las dos competencias para líderes.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Valoración descendente:proceso mediante el cual los líderes valorizan el desempeño de los miembros de su equipo frente a las competencias del banco, y en conjunto se construyen metas corporativas y de desarrollo profesional.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Valoración ascendente:proceso mediante el cual los miembros de un equipo valorizan el desempeño de los líderes frente a las cinco competencias corporativas.</p>
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Por qué hacemos valorización de desempeño?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">La idea de este proceso es brindarles la oportunidad a los colaboradores de conocer la perspectiva de sus líderes y equipo frente a las competencias del banco, y enriquecer su desempeño y desarrollo.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Quiénes participan del proceso de valoración ascendente?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">En el proceso de valoración ascendente, los miembros de un equipo deben reflexionar sobre el desempeño de su líder frente a las competencias y valorizar el mismo. Dado que esta fase es nueva para Banistmo a partir de este año solamente se habilitará este proceso para que los gerentes y directores valoricen a sus superiores jerárquicos, y así sucesivamente hacia arriba.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">Me he cambiado de área, ¿qué equipo me valora?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">La valorización contempla el desempeño realizado durante el año; pero si durante este periodo has cambiado de equipo, te debe valorar el líder o el equipo con el que más tiempo hayas colaborado.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Qué proceso debo seguir si soy un líder nuevo?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si eres un líder nuevo en Banistmo, dentro de los 3 meses o menos en la posición, se considera que aun estás en la curva de aprendizaje por lo que no es obligatorio que te valorice tu equipo.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Puedo leer el detalle de las valoraciones que mi equipo ha hecho en el sistema?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Sí, es posible leer los comentarios y valoraciones que haga tu cada persona de tu equipo en el sistema, de manera individual.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Deben los miembros de mi equipo darme retroalimentación?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">A diferencia de la valoración descendente donde la retroalimentación es de carácter obligatorio, en la fase de valoración ascendente no lo es. Sin embargo, te invitamos a tener la apertura y disposición para establecer conversaciones basadas en el respeto y la escucha activa, para que los colaboradores se sientan en confianza de entregarte los juicios acerca de tu desempeño.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Que se hará con esta información y quien tendrá acceso a ella?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Los resultados de esta fase serán utilizados para planes de desarrollo, que brindaran el acompañamiento que necesite aquel colaborador que tenga una competencia por desarrollar.</p>
+
+
+       </div>
+    </div><br/>
+
+    <div>
+       <div class="form-group"  ng-click="showThree()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+          Capacitaciones
+          <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show3===false"></i>
+          <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show3===true"></i>
+       </div>
+       <div class="form-group" ng-show="show3" style="color:black; padding-top:10px;">
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿A qué cuenta de correo puedo contactar al Departamento de Formación y entrenamiento?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Puedo escribirles al buzón GH_Formación.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Dónde está ubicado el Centro de Formación y entrenamiento Banistmo?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El centro Formación y entrenamiento Banistmo se encuentra ubicado en Galerías Plaza Carolina (Chanis a un costado de las oficinas del SERTRACEN)</p>
+
+       </div>
+    </div><br/>
+
+    <div>
+       <div class="form-group"  ng-click="showFour()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+          Beneficios
+          <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show4===false"></i>
+          <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show4===true"></i>
+       </div>
+
+       <!--First submenu  -->
+       <div class="form-group" ng-show="show4" style="color:black; padding-top:10px;">
+         <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="beneficiousShowOne()">
+            Descuentos
+            <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="beneficious1===false"></i>
+            <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="beneficious1===true"></i>
+         </div>
+         <div ng-show="beneficious1">
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Tenemos descuento en gimnasio?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Power Club</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Mensualidad de $55.00 + 7%</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Válido en todas las sucursales</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Extensivo para conyugue e hijos</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Teléfono: 392-8100</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuales son las universidades en la que tengo descuento?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Universidad Del Istmo (UDI)</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Universidad Santa María la Antigua (USMA)</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Universidad Latina de Panamá</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Universidad Interamericana de Panamá</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para más detalle en Convenios/Educación.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo aplicar al descuento de las universidades?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para aplicar al descuento de universidades, usted deberá:</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">1. Verificar si la universidad de su elección se encuentra en el listado y en que porcentaje es el descuento.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">2. Solicitar a través de la herramienta GH Contigo Casos, una certificación laboral (importante colocar el nombre de la universidad a la cual solicitará el descuento).</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">3. Presentar en dicha universidad certificación laboral.</p>
+
+         </div>
+
+       </div>
+
+      <!-- Second submenu -->
+
+      <div class="form-group" ng-show="show4" style="color:black; padding-top:10px;">
+        <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="beneficiousShowTwo()">
+         Becas
+           <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="beneficious2===false"></i>
+           <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="beneficious2===true"></i>
+        </div>
+        <div ng-show="beneficious2">
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Existen becas para los hijos de empleados?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Apoyo a la Excelencia Académica: es el Programa de Becas que promueve la Sociedad de Esposas de Banqueros de Panamá y en donde participan exclusivamente los hijos de colaboradores bancarios.</p>
+
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuáles son los requisitos para beca de la Sociedad de Esposas de Banqueros?	</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Requisitos para formar parte del programa de becas:</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">1. Los aspirantes deberán ser estudiantes de secundaria en un COLEGIO OFICIAL (I al VI año).</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">2. Haber concluido el año escolar previo con un promedio general mínimo de 4.0 (cuatro).</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">3. Ser hijo de un colaborador(a) bancario(a) cuyo sueldo no sobrepase los (B/.1.000) MIL BALBOAS.</p>
+
+        </div>
+      </div>
+
+    <!--Third submenu  -->
+
+
+          <div class="form-group" ng-show="show4" style="color:black; padding-top:10px;">
+            <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="beneficiousShowThree()">
+              Deportes
+               <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="beneficious3===false"></i>
+               <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="beneficious3===true"></i>
+            </div>
+            <div ng-show="beneficious3">
+              <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo ingresar a un equipo deportivo?</p>
+              <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Las inscripciones para incluirse en las ligas deportivas se hacen mediante comunicaciones masivas, informando los contactos para las inscripciones de las diferentes ligas.</p>
+
+
+              <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuáles son los disciplinas en las que participa Banistmo?</p>
+              <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Los deportes en los que participa Banistmo son:</p>
+              <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Futbol (Interno e Interbancario)</p>
+              <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Softball (Interno e Interbancario)</p>
+              <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Running Team</p>
+              <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Bolos</p>
+              <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Voleibol</p>
+              <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Baloncesto</p>
+              <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Mesa de Tenis</p>
+            </div>
+        </div>
+
+        <!-- Fourth sub menu -->
+        <div class="form-group" ng-show="show4" style="color:black; padding-top:10px;">
+          <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="beneficiousShowFour()">
+           Beneficios
+             <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="beneficious4===false"></i>
+             <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="beneficious4===true"></i>
+          </div>
+          <div ng-show="beneficious4">
+            <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Desde cuándo puedo hacer uso de mi fondo de retiro?</p>
+            <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Usted puede hacer uso de su fondo individual como colaborador a partir de 10 años de contribución en el plan y de los fondos patronales a la edad de jubilación o cuando se termine la relación laboral.</p>
+
+          </div>
+        </div>
+
+      <!-- Fifyh submenu -->
+      <div class="form-group" ng-show="show4" style="color:black; padding-top:10px;">
+        <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="beneficiousShowFive()">
+          Seguro de Vida y Salud
+           <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="beneficious5===false"></i>
+           <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="beneficious5===true"></i>
+        </div>
+        <div ng-show="beneficious5">
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo aplicar al reembolso por compra de lentes?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El colaborador debe completar el Formulario de Reclamación y Gastos Médicos y adjuntar la factura original de compra y enviar ambos documentos por mensajería interna a las Asesoras de Seguro Ana Beatriz Gill o Pauleth Espinosa en Casa Matriz, piso 6, Gestión de lo Humano. El reembolso se realizará a su cuenta de planilla en 10 días hábiles.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo afiliar a un dependiente al servicio médico?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">1. Debe completar Solicitud de Adición de Dependientes con cuestionario médico que se encuentra ubicado en la intranet en Mis Beneficios / pestaña de seguro de vida y salud / formularios.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Debe completar en la primera parte los datos del asegurado principal los datos del dependiente a incluir, agregar el peso y estatura. Completar el cuestionario de salud y firmar.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Si la persona a incluir, es mayor de edad igualmente debe firmar debajo de la firma del asegurado principal.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">2. Debe completar el formulario de Autorización para descuento de salario, el mismo se encuentra en la intranet, en Mis Beneficios / pestaña de seguro de vida y salud / formularios.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Colocar un gancho en la casilla: Autorización Cambio de Categoría (Inclusión),</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Completar datos del colaborador.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· En la sección Tipo de Plan y Categoría: si usted ocupa una posición como Vicepresidente o Director debe elegir la categoría de acuerdo a la cantidad de dependientes a incluir (Columna Plan Plan A-Ejecutivo).</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para el resto de las posiciones debe elegir la categoría de acuerdo a la cantidad de dependientes a incluir (Columna Plan B – Administrativo).</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">3. Enviar documentos por mensajería interna a las Asesoras de Seguro Ana Beatriz Gill o Pauleth Espinosa en Casa Matriz, piso 6, Gestión de lo Humano.</p>
+
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Requisitos para incluir o excluir dependientes del seguro médico?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Los requisitos para incluir o excluir dependientes del seguro médico, son:</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para incluir dependientes dentro del seguro:</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">1. Debe completar Formulario de Declaración de salud Solicitud de Adición de Dependientes con cuestionario médico que se encuentra ubicado en la intranet en Mis Beneficios / pestaña de seguro de vida y salud / formularios.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Debe completar en la primera parte los datos del asegurado principal los datos del dependiente a incluir, agregar el peso y estatura. Completar el cuestionario de salud y firmar.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Si la persona a incluir, es mayor de edad igualmente debe firmar debajo de la firma del asegurado principal.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">2.  Debe completar el formulario de Autorización depara descuento de salario, el mismo no se encuentra en la intranet, en Mis Beneficios / pestaña de seguro de vida y salud / formularios.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Colocar un gancho en la casilla: Autorización Cambio de Categoría (Inclusión),</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Completar datos del colaborador.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· En la sección Tipo de Plan y Categoría: si usted ocupa una posición como Vicepresidente o Director debe elegir la categoría de acuerdo a la cantidad de dependientes a incluir (Columna Plan Plan A-Ejecutivo).</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para el resto de las posiciones debe elegir la categoría de acuerdo a la cantidad de dependientes a incluir (Columna Plan B – Administrativo).</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">3. Enviar documentos por mensajería interna a las Asesoras de Seguro Ana Beatriz Enviar documentos por mensajería interna a las Asesoras de Seguro Ana Beatriz Gill o Pauleth Espinosa en Casa Matriz, piso 6, Gestión de lo Humano.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">Para Excluir dependientes:</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">1. Debe completar el formulario de Autorización para de Descuento descuento de salario y colocar un gancho a la casilla exclusión y dar gancho según categoría de a acuerdo a la cantidad de dependientes. exclusión y a la categoría AS B/.0.00</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;text-decoration: underline;">2. Adicional, debe enviar un correo a panama_asesor_seguro, solicitando la exclusión de los dependientes como constancia del trámite.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">3. Enviar documentos por mensajería interna a las Asesoras de Seguro Ana Beatriz Gill o Pauleth Espinosa en Casa Matriz, piso 6, Gestión de lo Humano.</p>
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">Los nuevos carné de seguro médico son tramitados en un periodo de 7 días hábiles y la recepción del mismo se le confirmará a través del Asesor de Seguro.</p>
+
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo obtengo el formulario de Reclamación Médica?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El formulario de Reclamación Médica, se obtiene en:</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">La Intranet, Gestión de lo Humano, Mis Beneficios, pestaña de seguro de vida y salud/ formularios.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">O lo podrás descargar aquí:  </p>
+
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Si soy colaborador de nuevo ingreso a partir de qué fecha recibo el carné de  de seguro médico y si incluyo a un dependiente cuándo recibo el carné?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El carné de seguro médico del colaborador le será entregado al momento de recibir su inducción de primer ingreso, de no ser así, puede contactarse con la Asesora de Seguros a través del buzón Panama_Asesor_de_Seguro.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El carné de seguro médico del dependiente que colocó en la tarjeta de inscripción es recibido por la Asesora de Seguro en 7 días hábiles. La Asesora coordinará entrega de acuerdo a su ubicación personal.</p>
+
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo funciona el Beneficio de Odontología?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El beneficio de odontología descrito por la póliza, consta del beneficio de la extracción de las 3ras. molares impactada, para lo cual se reconoce hasta B/.125.00 por cada molar extraída.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Este beneficio, es contra reembolso y debe presentar el formulario de Reclamación y Gastos Médicos junto con la factura de pago y adjuntar una copia de la panorámica de los dientes. (NO APLICA RED SIGMA).</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Enviar documentos por mensajería interna a las Asesoras de Seguro Ana Beatriz Gill o Pauleth Espinosa en Casa Matriz, piso 6, Gestión de lo Humano.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">La red Sigma funciona para temas de Prevención y Emergencias dentales, a través del cual el colaborador debe llamar al número 800-7462, para asesoramiento en cuanto a las clínicas u hospitales bajo la red que puede utilizar y para las citas.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Tiene derecho a una limpieza anual igualmente con la red Sigma.</p>
+
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo funciona el Beneficio Óptico?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El beneficio de lentes es hasta un tope de B/.150.00, para lo cual usted tiene derecho a 1 par de lentes por año. El beneficio es contra reembolso y debe presentar formulario de Reclamación y Gastos Médicos junto con la factura fiscal de pago.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Enviar documentos por mensajería interna a las Asesoras de Seguro Ana Beatriz Gill o Pauleth Espinosa en Casa Matriz, piso 6, Gestión de lo Humano.</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Usted puede utilizar el comercio de su preferencia, para la compra de los lentes, ya que no existe red para el mismo.</p>
+
+        </div>
+    </div>
+
+    </div>
+
+    </div><br/>
+
+
+    <div>
+       <div class="form-group"  ng-click="showFive()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+          Mi Pago
+          <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show5===false"></i>
+          <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show5===true"></i>
+       </div>
+         <!--First submenu  -->
+         <div class="form-group" ng-show="show5" style="color:black; padding-top:10px;">
+           <div class="form-group"  style="background-color: #78a0d2;color: white;height: 50px;padding-top: 8px;padding-left: 6%;" ng-click="miShowOne()">
+              Carta de trabajo y certificación de ingresos
+              <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="mi1===false"></i>
+              <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="mi1===true"></i>
+           </div>
+           <div  ng-show="mi1">
+             <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo solicito una carta de trabajo y/o certificación de ingresos?</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para solicitar una carta de trabajo y/o certificación de ingresos deberá ingresar a GH Contigo Casos (accediendo a la Intranet, Aplicaciones, Gestión de lo Humano, GH Contigo Casos) incluyendo la siguiente información:</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Número de Colaborador</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· A quien va dirigida la carta (a quien concierne o nombre de la empresa en particular) *</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Ubicación (edificio, piso y departamento) para el envío de su carta.</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Colocar en el Asunto del correo: "Carta de Trabajo" o "Certificación de Ingresos".</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">* Solo aplica en el caso de carta de trabajo</p>
+
+             <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Qué información contiene una carta de trabajo?</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Una carta de trabajo tendrá sus datos personales, fecha de inicio de labores, posición, salario y sus deducciones.</p>
+
+             <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Qué información contiene una certificación de ingresos?</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Una certificación de ingresos tendrá la siguiente información:</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Sus datos personales</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Ingresos recibidos y sumas retenidas (Impuesto sobre la renta, seguro social y seguro educativo) del año culminado.</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">La certificación de ingreso es solicitada por aquellos colaboradores que realizan declaración de renta.</p>
+
+           </div>
+
+         </div>
+
+         <!--second submenu  -->
+         <div class="form-group" ng-show="show5" style="color:black; padding-top:10px;">
+           <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="miShowTwo()">
+              Descuento directo
+              <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="mi2===false"></i>
+              <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="mi2===true"></i>
+           </div>
+           <div ng-show="mi2">
+             <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo solicito un descuento directo?</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para solicitar un descuento directo deberá hacer llegar la orden de descuento de la organización/persona a la cual se le dirigirá el descuento al Departamento de Planilla ubicado en Plaza Edison, Nivel 300-.</p>
+
+             <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuál es mi capacidad de descuento?</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Su capacidad de descuento es del 20% de su salario para préstamos y 30% en el caso de hipotecas.</p>
+
+             <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo saber si mi descuento fue aprobado?</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El trámite para la aprobación de su descuento directo es de 48 horas (días laborables, no se contabilizan los días sábados). Una vez envíe la orden de descuento puede crear un caso de Sales Lógica donde se le dará respuesta a las mismas.</p>
+
+
+             <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo cancelar un descuento directo?</p>
+             <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Los descuentos directos solo pueden ser cancelados por instrucción directa del acreedor. Esta instrucción es procesada únicamente por el Departamento de Planilla.</p>
+
+           </div>
+
+       </div>
+
+       <!-- third submenu -->
+       <div class="form-group" ng-show="show5" style="color:black; padding-top:10px;">
+         <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="miShowThree()">
+            Impuestos
+            <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="mi3===false"></i>
+            <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="mi3===true"></i>
+         </div>
+         <div ng-show="mi3">
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuáles son los impuestos que se aplicarán a mi salario y gasto de representación?	</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">De acuerdo a nuestra legislación vigente los impuestos aplicados al Salario son:</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Seguro Social: 9.75%</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Seguro Educativo: 1.25%</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Impuesto Sobre la Renta: el porcentaje varía según los salarios.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">De acuerdo a nuestra legislación vigente los impuestos aplicados al Gasto de Representación son:</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Seguro Social: 9.75%</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Impuesto Sobre la Renta: el porcentaje varía según el monto del gasto de representación.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿A partir de que salario se me cobrará impuesto sobre la renta?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para determinar el monto de ISR a pagar debe sumar todos los ingresos percibidos (salarios, el XIII Mes, bonos, primas de producción y la participación de utilidades) durante el año y ubicar el rango según la tabla de impuesto.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Hasta B/. 11,000.00 el 0%.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Más de B/. 11,000.00 hasta B/. 50,000.00 el 15% por el excedente de B/. 11,000.00</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· De más de B/.50,000.00 Pagarán B/. 5,850 por los primeros B/. 50,000.00 y 25 % sobre el excedente.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Qué impuestos se le aplican al Décimo Tercer Mes?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">De acuerdo a nuestra legislación vigente los impuestos aplicados a cada partida del XIII Mes son:</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Seguro Social: 7.25 %</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Impuesto sobre la Renta: el porcentaje varía según el monto del décimo.</p>
+
+
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿De cuánto es el impuesto sobre la renta para el gasto de representación?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">De acuerdo a nuestra legislación vigente para efectos del impuesto sobre la renta del Gasto de Representación aplica la siguiente tabla:</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Hasta B/. 25,000 el gasto de representación es del 10%</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· De más de B/. 25,000 pagarán B/. 2,500 por los primeros B/. 25,000.00 y una tarifa del 15% sobre el excedente de B/. 25,000.00</p>
+
+         </div>
+      </div>
+
+     <!-- fourth submenu -->
+
+     <div class="form-group" ng-show="show5" style="color:black; padding-top:10px;">
+       <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="miShowFour()">
+          Licencia de Maternidad
+          <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="mi4===false"></i>
+          <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="mi4===true"></i>
+       </div>
+       <div ng-show="mi4">
+         <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuánto tiempo debo cotizar en el Seguro Social para al pago de mi licencia por maternidad?</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">La colaboradora debe haber cotizado mínimo 9 meses continuos para tener derecho al pago de su licencia por maternidad.</p>
+
+         <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuándo puedo iniciar el trámite para la licencia de Maternidad?</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">La Caja de Seguro Social establece un período de 28 semanas de embarazo para que usted pueda iniciar los trámites de la licencia correspondiente.</p>
+
+         <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuáles son los pasos que debo seguir para tramitar mi licencia de maternidad?	</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Realizamos las siguientes recomendaciones para tramitar su licencia de maternidad:</p>
+         <p class="text-wrap" style="padding: 12px;padding-top: 0px;">· Al cumplir las 28 semanas de embarazo deberá solicitar a su médico Gineco-Obstetra un certificado de embarazo, el mismo debe llevar sello, código legible y firma del doctor así como indicar la fecha probable de parto. Deberá presentarse en original sin ningún tipo de alteraciones.</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· En caso de atenderse en clínica privada este certificado debe ser homologado en una Policlínica por un médico de la Caja de Seguro Social. Si se atiende directamente con la Caja de Seguro Social, éste le emitirá dicho documento.</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Con un certificado de embarazo original u homologado, según sea su caso, usted deberá iniciar los trámites en la Agencia de la CSS (sección de Subsidio de Maternidad) más cerca a su vivienda o lugar de trabajo. También deberá llevar: Original y copia de su cédula, carnet y ficha de Seguro Social.</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· En la Agencia del Seguro Social le entregarán un modelo de carta de exclusión de planillas y desglose salarial. Esto debe ser remitido al Departamento de Planilla (ubicado en Plaza Edison, Nivel 300) junto con el certificado de embarazo original u homologado, copia de su cédula, de su carnet de seguro social y copia su última ficha.</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Presentar las cartas de exclusión de planilla y desglose salarial que le confeccionaremos, a la Agencia de la CSS para que le efectúen el pago del salario durante el tiempo que estará de licencia de maternidad.</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Por favor tomar nota que su carta de exclusión, su certificado médico y su carnet del seguro social deben coincidir con el nombre que aparece en su cédula. (Todos con apellido de soltera o de casada según indique en su cédula).</p>
+
+
+         <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Durante mi licencia recibo pago de décimo tercer mes?</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Durante la licencia de maternidad la colaboradora recibe pago de décimo tercer mes y este es cubierto en su totalidad por el patrono.</p>
+
+         <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿A cuánto tiempo tengo derecho por mi licencia de maternidad?</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">La solicitud del subsidio por maternidad es un beneficio al que tiene derecho las aseguradas que cotizan en la Caja de Seguro Social. La misma establece un periodo de descanso de 14 semanas que deben ser tomadas 6 semanas antes y 8 semanas después del nacimiento.</p>
+
+         <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Qué ficha de Seguro Social utilizaré durante el periodo que no reciba ficha por parte de la empresa?</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Durante su licencia por maternidad, usted no cotizará por medio de la empresa por lo cual no recibirá ficha por medio del empleador. Sin embargo, junto al pago de la licencia por parte de la Caja de Seguro Social usted recibirá un talonario que estará vigente durante los meses en los cuales no recibe ficha.</p>
+
+         <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿A cuánto tiempo de lactancia, tengo derecho?</p>
+         <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Toda madre cuando esté lactando dispondrá de un intervalo de quince minutos cada tres horas, o, si lo prefiere, de media hora dos veces al día durante sus labores, con el objeto de alimentar a su hijo.</p>
+
+       </div>
+      </div>
+
+       <!--Fifth sub menu  -->
+
+       <div class="form-group" ng-show="show5" style="color:black; padding-top:10px;">
+         <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="miShowFive()">
+            Vacaciones
+            <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="mi5===false"></i>
+            <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="mi5===true"></i>
+         </div>
+         <div ng-show="mi5">
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuántos días de vacaciones puedo tomar?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Todos los empleados deberán salir a disfrutar sus vacaciones preferiblemente los 30 días completos o dividir en dos periodos de 15 días cada uno. Es importante que el colaborador acuerde con su jefe directo el periodo de sus vacaciones. Favor referirse a la política de vacaciones de Banistmo.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuándo se pagan las vacaciones?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Las vacaciones se pagan los 10 y los 25 de cada mes, siempre y cuando las vacaciones sean solicitadas antes del cierre del calendario de planilla de la quincena previa a iniciar sus vacaciones. Las vacaciones se pagan por adelantado al inicio de las mismas.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo se pagan las vacaciones?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para efectos del cálculo de vacaciones se deberá tomar en cuenta como salario (de 11 meses) los siguientes conceptos: Salario Base, Horas Extras, Prima de Producción, Bonificaciones, Gratificaciones y Comisiones, la sumatoria de estos se divide entre 11 o se multiplica por 9.09%.</p>
+
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuándo tengo derecho a mis vacaciones?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Todo empleado tiene derecho a treinta días por cada once meses laborados de manera continua a razón de un día por cada once días de servicio a su empleador.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">Si tengo vacaciones acumuladas, ¿Cómo debo cobrarlas?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si usted tiene vacaciones acumuladas debe elevar la consulta a su jefe directo para que evalúe la situación. No debe exceder más de 60 días acumulados. Favor referirse a la política de vacaciones de Banistmo.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Puedo tomar menos de 15 días de vacaciones?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">De acuerdo a lo establecido en la política de vacaciones y tomando en cuenta la actividad y necesidad del Banco, únicamente los empleados con cargos de Gerentes hacia arriba podrían solicitar vacaciones por periodos diferentes a los 15 y 30 días.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Con quién debo contactarme para conocer el tiempo de vacaciones pendiente?	</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Todos los colaboradores pueden consultar la cantidad de vacaciones acumuladas en su talonario de pago.</p>
+
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo solicito mis vacaciones?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para solicitar sus vacaciones deberá completar el formulario de solicitud de vacaciones que encontrará en el ícono de RH Informa, Workspaces de Lotus Notes, Acción de Personal, dando clic en Crear Solicitud de Vacaciones, Completa el formulario de vacaciones y Enviar Solicitud.</p>
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">Durante el período de vacaciones se desactivarán los accesos que mantiene el personal a los sistemas de Banistmo, S.A. o Subsidiarias. Esto aplicará para las solicitudes con periodos de Vacaciones de 15 días o más. Con el fin de evitar contratiempos en las labores propias del cargo, cada persona, antes de salir a disfrutar de sus vacaciones, activará en la herramienta de correo el mensaje de fuera de Oficina.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Ver instrucciones:</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo saber el estatus de mi solicitud de vacaciones?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para conocer el estatus de su solicitud de vacaciones deberá ingresar a través del ícono de RH Informa que encontrará en su Workspaces de Lotus Notes, Acción de Personal, en la parte inferior del formulario "Approval History" podrá conocer el estatus de su solicitud de vacaciones.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo cancelar las vacaciones solicitadas por el sistema?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">La programación de las vacaciones debe cumplirse en su totalidad. Únicamente se harán cambios en esta programación si la solicitud la hace el jefe directo con un mínimo de 15 días de anticipación a la fecha estimada de inicio de las vacaciones; para procesar esta solicitud deben estar incluyendo la reprogramación de las vacaciones y debe estar autorizada en el módulo de vacaciones.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">En caso de cancelaciones debe enviar correo de notificación al Departamento de planilla(Valentín Parris y Deysi Avilés) y con copia al Gerente de Relacionamiento Humano, Director de Área y al Gerente de Planilla.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Qué pasa si debo regresar en mi periodo de vacaciones?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El jefe del área deberá consultar con la Vicepresidencia de Gestión de lo Humano y Transformación Digital e Innovación a través de se Gerente de Relacionamiento Humano o Socios Estratégicos de las diferentes áreas para que dicha excepción le sea aprobada.</p>
+
+         </div>
+      </div>
+
+    </div><br/>
+
+    <!--for six main menu  -->
+    <div>
+       <div class="form-group"  ng-click="showSix()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+          Mi Equipo
+          <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show6===false"></i>
+          <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show6===true"></i>
+       </div>
+
+       <!--First submenu  -->
+       <div class="form-group" ng-show="show6" style="color:black; padding-top:10px;">
+         <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="miEquipoShowOne()">
+            Horarios
+            <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="miEquipo1===false"></i>
+            <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="miEquipo1===true"></i>
+         </div>
+         <div ng-show="miEquipo1">
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Puedo asignar a un colaborador horarios flexibles?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Puede asignar horarios de acuerdo al contrato que firmo el colaborador al momento de ingresar al banco.</p>
+         </div>
+       </div>
+       <!-- second sub menu -->
+       <div class="form-group" ng-show="show6" style="color:black; padding-top:10px;">
+         <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="miEquipoShowTwo()">
+            Renuncia
+            <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="miEquipo2===false"></i>
+            <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="miEquipo2===true"></i>
+         </div>
+         <div ng-show="miEquipo2">
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuáles son los pasos a seguir si un colaborador de mi equipo presenta una renuncia voluntaria?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si uno de sus colaboradores presenta una renuncia usted deberá:</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Validar que la carta contenga el nombre de la persona, la fecha de salida del banco, debe estar sellada por el Ministerio de Trabajo.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Debe firmar la carta como acuse de recibido.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Notificar a su Gerente de Relacionamiento Humano y enviarle la carta de renuncia original.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· El último día laborado usted junto a su colaborador completarán el check list de terminación laboral, asegurando que sean devueltos los artículos propiedad del banco</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Enviar check list de salida original a nombre de Yissel Vega o Yaremis Rodríguez en Casa Matriz, piso 6, Gestión de lo Humano.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Qué debe contener una carta de renuncia?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">La carta de renuncia debe contener el nombre de la persona, la fecha de salida del banco y debe estar sellada por el Ministerio de Trabajo.</p>
+         </div>
+       </div>
+
+       <!-- Third sub menu -->
+       <div class="form-group" ng-show="show6" style="color:black; padding-top:10px;">
+         <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="miEquipoShowThree()">
+            Colaborador Temporal
+            <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="miEquipo3===false"></i>
+            <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="miEquipo3===true"></i>
+         </div>
+         <div ng-show="miEquipo3">
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Qué pasa si se vence el contrato de uno de mis colaboradores temporales?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Es importante que usted como líder del equipo se mantenga atento a la fecha de culminación de contrato del colaborador temporal. Gestión de lo Humano se pondrá en contacto con usted 15 días previo a la culminación de dicho contrato, de no recibir ninguna información siempre podrá contactarnos por medio de GH_Contigo Casos.</p>
+         </div>
+       </div>
+
+    </div><br/>
+
+    <!--seventh main menu  -->
+    <div>
+       <div class="form-group"  ng-click="showSeven()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+          Incorporación de colaboradores
+          <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show7===false"></i>
+          <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show7===true"></i>
+       </div>
+       <div class="form-group" ng-show="show7" style="color:black; padding-top:10px;">
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuánto tiempo después de la firma, se me entregará la copia de mi contrato?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Se le enviará la copia de su contrato en un lapso no mayor a un mes calendario a partir de la firma del mismo.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo solicito el código para realizar llamadas telefónicas?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">El área de Tecnología le enviará por medio de un correo electrónico su código de llamada. Puede contactar al área de Tecnología por medio de su Mesa de Ayuda (217-9696)</p>
+
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">¿Cuándo recibiré mi primera ficha de seguro social?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Su primera ficha de Seguro Social la recibirá 3 meses después de su ingreso. Si requiere de atención médica, por favor contactar a GH Contigo (800-7744) para conocer el proceso a seguir.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">No tengo carné de Seguro Social, ¿cómo podré atenderme?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para atenderse en la Caja de Seguro Social usted deberá presentar su ficha vigente y cédula.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuáles son los días de pago?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Los días de pago son los 10 y 25 de cada mes. Recuerde que, el pago del 10 corresponde a la quincena del 1 al 15 y el pago del 25 corresponde a la quincena del 16 al 30 del mes respectivamente.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿A quién puedo contactar si tengo dudas sobre mis accesos?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si usted no ha recibido todos sus accesos, deberá reportar esto por medio de la nueva herramienta GH Contigo Casos (accediendo a la Intranet, Aplicaciones, Gestión de lo Humano, GH Contigo Casos, seleccionar: área: incorporación de personal, categoría: accesos, tipo: consulta)</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">No he recibido mi tarjeta clave ¿cómo puedo ubicarla?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Si usted no ha recibido su tarjeta clave, deberá reportar esto por medio de la herramienta GH Contigo Casos. Puede acceder en la Intranet, Aplicaciones, Gestión de lo Humano y Transformación Digital e Innovación, GH Contigo Caso. Elegir la el área: incorporación de personal, categoría: tarjeta clave, tipo: consulta o solicitud.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cuándo recibiré el vale?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Los vales se entregan a final de cada mes.</p>
+
+          <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Dónde ubico mi talonario de pago?</p>
+          <p style="padding: 12px;padding-top: 0px;margin-top: -17px;text-decoration: underline;">Podrás identificar tu talonario de pago ingresando a la Intranet, Gestión de lo Humano, Mi Pago.</p>
+
+
+       </div>
+    </div><br/>
+
+    <!-- Eight main menu -->
+    <div>
+       <div class="form-group"  ng-click="showEight()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+          Concurso interno y selección
+          <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show8===false"></i>
+          <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show8===true"></i>
+       </div>
+
+       <!--First submenu  -->
+       <div class="form-group" ng-show="show8" style="color:black; padding-top:10px;">
+         <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="concursoShowOne()">
+            Concurso interno
+            <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="concurso1===false"></i>
+            <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="concurso1===true"></i>
+         </div>
+         <div ng-show="concurso1">
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo conocer las vacantes internas?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para conocer las vacantes internas ingrese a la Intranet, Gestión de lo Humano, Mi Crecimiento, Vacantes Internas.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo consultar el status de una aplicación a un concurso interno?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Puede consultar por medio de GH_Contigo Casos, Selección y Desarrollo, Concurso Interno</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">En caso de cambiar de puesto ¿Me entregan un contrato nuevo?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Los contratos no sufren cambios. En este caso se le envía una carta confirmándole su nueva posición.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Qué requisitos debo cumplir para participar en una vacante interna?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Para participar y ser considerado en un Concurso Interno es necesario:</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Contar con mínimo 12 meses en su posición actual y 18 meses para colaboradores de la Red de Sucursales.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Adicionalmente, en el correo electrónico en que realizas tu aplicación, requieres:</p>
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">· Indicar en el asunto o subject del correo el número del concurso al cual deseas aplicar</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Copiar a tu jefe inmediato. Recuerda conversar con él antes de remitir tu aplicación</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Adjuntar tu Hoja de Vida actualizada</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Puedo conocer los resultados de mi evaluación psicometría?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Correcto, puede consultar sobre los resultados de sus pruebas a través de GH Contigo Casos o comunicarse con la Oficial encargada de su proceso.</p>
+
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Puedo participar para varias vacantes al mismo tiempo?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Es importante medite sobre la ruta de crecimiento que desea seguir dentro de la organización y en base a esto, aplique a aquellos concursos en los cuales considere que su perfil y experiencia profesional puede ajustarse.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">>Esto debido a que, se permitirá aplicar a un (1) sólo concurso interno a la vez. De recibir múltiples aplicaciones por su parte, sólo se tomará como válida la primera de ellas.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">De no ser seleccionado, podrá volver a participar, una vez reciba confirmación de cierre de concurso interno.</p>
+         </div>
+       </div>
+
+       <!--second submenu  -->
+
+       <div class="form-group" ng-show="show8" style="color:black; padding-top:10px;">
+         <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="concursoShowTwo()">
+            Selección
+            <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="concurso2===false"></i>
+            <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="concurso2===true"></i>
+         </div>
+         <div ng-show="concurso2">
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Dónde puede verificar la bolsa de trabajo una persona externa?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Puede consultar por medio de la Bolsa de Trabajo Konzerta ó bien, puede compartirnos su hoja de vida en el portal www.banistmoempleos.konzerta.com. Su hoja de vida será registrada en nuestra base de datos para que al momento de contar con una posición adecuada a su perfil podamos contactarle.</p>
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿Cómo puedo recomendar a un amigo para que trabaje en Banistmo?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Puede indicarle que envíe su hoja de vida a www.banistmoempleos.konzerta.com</p>
+         </div>
+       </div>
+
+       <!--third sub menu  -->
+       <div class="form-group" ng-show="show8" style="color:black; padding-top:10px;">
+         <div class="form-group"  style="background-color: #78a0d2;color: white;height: 38px;padding-top: 8px;padding-left: 6%;" ng-click="concursoShowThree()">
+            Práctica Profesional
+            <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="concurso3===false"></i>
+            <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="concurso3===true"></i>
+         </div>
+         <div ng-show="concurso3">
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">¿En Banistmo está permitiendo la opción de práctica?</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">En Banistmo queremos construir con nuestros jóvenes un negocio más humano que contribuya con el desarrollo económico y social de las comunidades en donde hacemos presencia. Por ello, dependiendo de las necesidades de las áreas, recibimos practicantes cumpliendo los siguientes requisitos:</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Aprobación del VP del área que solicita el practicante</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Aprobación del VP de Gestión de lo Humano. Ser estudiante en últimos años de Carrera Universitaria</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">· Contar con disponibilidad para realizar su práctica en horario de oficina Lunes a Viernes de 8 a.m. - 5 p.m.</p>
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">Colaboradores que quieren aprovechar para hacer su práctica.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Estas solicitudes de práctica profesional, deben ser validadas con el Socio Estratégico de su VP.</p>
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">Colaboradores que conocen a alguien que quiere practicar en Banistmo.</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Con gusto, el candidato interesado en realizar práctica puede enviar sus datos e información de solicitud al siguiente correo: Luanymonique.ulloa-delgado@banistmo.com</p>
+           <p class="text-wrap" style="padding: 12px;padding-top: 0px;">Estudiantes externos para aplicar en la práctica profesional (secundaria y universitaria).</p>
+           <p style="padding: 12px;padding-top: 0px;margin-top: -17px;">Pueden enviar sus datos e información de solicitud a Luany Ulloa, correo: luanymonique.ulloa-delgado@banistmo.com</p>
+         </div>
+       </div>
+
+
+
+    </div><br/>
+
+    <!-- <ion-list>
+        <div ng-repeat="group in groups">
+          <ion-item class="item-stable"  ng-click="toggleGroup(group)"
+          style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;"
+                    ng-class="{active: isGroupShown(group)}">
+
+             {{group.name}}&nbsp;
+            <i class="icon" style="float: right;" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+          </ion-item><br/>
+          <div class="item-accordion" ng-repeat="item in group.items" ng-show="isGroupShown(group)" style="color:black;">
+            <p style="padding: 12px;font-weight: 700;">{{item.que}}</p>
+            <p class="text-wrap" style="padding: 12px;padding-top: 0px;">{{item.ans}}</p>
+          </div>
+        </div>
+      </ion-list> -->
+
+</ion-content>
+</ion-view>

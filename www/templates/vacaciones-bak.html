@@ -1,0 +1,113 @@
+<ion-view view-title="Vacaciones">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content scroll-overflow="false">
+    <div ng-if="user !== user">
+      <div style="padding: 17px;">john doe wants to take vacations  starts  January 1st, ends January 5th and back to his position January 7th.</div>
+      <div class="padding">
+          <button style="margin:0;"  class="button button-balanced  button-block">
+              Accept
+          </button>
+      </div>
+
+      <div class="padding">
+          <button style="margin:0;"  class="button button-assertive  button-block">
+              Decline
+          </button>
+      </div>
+    </div>
+
+
+    <div ng-if="user === user">
+    <div>
+        <div class="coupenHeaderStyle fontHeaderColor">Solicitud de vacaciones</div><br/>
+        <div style="PADDING-LEFT: 9px;font-weight: 500;">ESTIMADO JOHN DOE USTED CUENTA CON 22  DIAS DE VACACIONES DISPONIBLES</div>
+   </div><br/>
+
+   <form class="list">
+     <label class="item item-input item-stacked-label">
+         <span style="font-weight: 700;">Inicio de vacaciones</span>
+         <div class="row" style="padding-left:0px;">
+             <label class="col col-80 item item-icon-left datePicker" style="background-color: lightblue;" ion-datetime-picker date ng-model="incioDateValue">
+                 Date:
+                 <strong>{{incioDateValue| date: "MM-dd-yyyy"}}</strong>
+             </label>
+             <label class="col col-20 item item-icon-left"  ion-datetime-picker date ng-model="incioDateValue">
+                 <i class="icon ion-ios-calendar positive" style="padding-top: 0px;"></i>
+
+             </label>
+         </div>
+     </label>
+
+
+     <label class="item item-input item-stacked-label">
+         <span  style="font-weight: 700;">Fin de vacaciones</span>
+         <div class="row" style="padding-left:0px;">
+             <label class="col col-80 item item-icon-left datePicker" style="background-color: lightblue;" ion-datetime-picker date ng-model="finDateValue">
+                 Date:
+                 <strong>{{finDateValue| date: "MM-dd-yyyy"}}</strong>
+             </label>
+             <label class="col col-20 item item-icon-left"  ion-datetime-picker date ng-model="finDateValue">
+                 <i class="icon ion-ios-calendar positive" style="padding-top: 0px;"></i>
+
+             </label>
+         </div>
+     </label>
+
+
+     <label class="item item-input item-stacked-label">
+         <span class="" style="font-weight: 700;">Regreso de vacaciones</span>
+         <div class="row" style="padding-left:0px;">
+             <label class="col col-80 item item-icon-left datePicker" style="background-color: lightblue;" ion-datetime-picker date ng-model="regresoDateValue">
+                 Date:
+                 <strong>{{regresoDateValue| date: "MM-dd-yyyy"}}</strong>
+             </label>
+             <label class="col col-20 item item-icon-left"  ion-datetime-picker date ng-model="regresoDateValue">
+                 <i class="icon ion-ios-calendar positive" style="padding-top: 0px;"></i>
+
+             </label>
+         </div>
+     </label>
+
+      <label class="item item-input item-select">
+          <div class="input-label" style="font-weight: 700;">
+            Regreso a su puesto
+          </div>
+          <select ng-model="reportsToId" name="reportsToId" ng-options="obj._id as obj.username for obj in allUsers"
+           ng-required="true" id="reportsTo" required></select>
+
+      </label>
+
+
+         <label class="item-input item-stacked-label item item-text-wrap">
+           <span class="" style="font-weight: 700;">Comentarios</span>
+             <div class="row" style="padding-left:0px;">
+                 <label class="col col-100 item item-icon-left">
+                    <textarea ng-model="comentariosData" placeholder="Description" style="height: 95px;"></textarea>
+                 </label>
+             </div>
+         </label>
+
+         <div class="padding">
+             <button style="margin:0;color:#000f9f;font-weight: 700;"  class="button button-energized  button-block" ng-click="submit(incioDateValue,finDateValue,regresoDateValue,reportsToId,comentariosData)">
+                  Enviar
+             </button>
+         </div>
+
+   </form>
+ </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,72 @@
+<ion-view view-title="Dinamica">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item backButtonClr"  ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item backButtonClr" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <div style="padding-left: 18px;">
+      <h3>Dinamica de Evaluacion</h3>
+      <p>En esta evaluacion mediremos el nival de comprension de las presentaciones que pudiste estudiar.</p>
+    </div>
+
+    <form class="list">
+
+      <label class="item item-input item-stacked-label">
+          <span style="font-weight: 700;">Cual es el color principal</span>
+          <div class="row" style="padding-left:0px;">
+            <div class="list" style="width: 100%;">
+              <ion-checkbox ng-repeat="item in devList" ng-model="item.checked" ng-checked="item.checked">
+                {{ item.text }}
+              </ion-checkbox>
+              <!-- <ion-radio ng-repeat="item in serverSideList"
+                   ng-value="item.value"
+                   ng-model="data.serverSide"
+                   ng-change="serverSideChange(item)"
+                   name="server-side">
+          {{ item.text }}
+        </ion-radio> -->
+             </div>
+            </div>
+      </label>
+      <label class="item item-input item-stacked-label">
+          <span style="font-weight: 700;">Checkboxes</span>
+          <div class="row" style="padding-left:0px;">
+            <div class="list" style="width: 100%;">
+               <ion-checkbox ng-repeat="item in devList" ng-model="item.checked" ng-checked="item.checked">
+                 {{ item.text }}
+               </ion-checkbox>
+             </div>
+            </div>
+      </label>
+
+
+       <label class="item item-input item-select">
+           <div class="input-label" style="font-weight: 700;">
+             Como se llama el Director General
+           </div>
+           <select ng-model="reportsToId" name="reportsToId" ng-options="obj._id as obj.username for obj in allUsers"
+            ng-required="true" id="reportsTo" required></select>
+
+       </label>
+
+          <div class="padding">
+              <button style="margin:0;"  class="button button-energized  button-block" ng-click="submit(incioDateValue,finDateValue,regresoDateValue,reportsToId,comentariosData)">
+                  Envair
+              </button>
+          </div>
+
+    </form>
+
+  </ion-content>
+
+</ion-view>

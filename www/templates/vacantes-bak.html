@@ -1,0 +1,53 @@
+<ion-view view-title="Vacantes">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="fontHeaderColor">
+
+    <div>
+        <img src="img/vacantes-crop.jpg" class="coupenImgStyle bottomBorder" style="height: 245px !important;">
+        <div  style="position: relative;left: 0;width: 100%;top: -42px;background-color: #ffffff;opacity: 0.6;height: 37px;padding: 8px;">
+          <span  style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">
+          Vacantes</span>
+        </div>
+      </div>
+    <!-- <div>
+        <img src="img/vacantes-crop.jpg" class="coupenImgStyle bottomBorder" style="height: 245px !important;">
+        <div  style="position: relative;left: 0;width: 100%;top: -42px;background-color: #ffffff;opacity: 0.6;height: 37px;padding: 8px;">
+          <span  style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;">
+          Vacantes</span>
+        </div>
+      </div> -->
+
+   <div class="formularioDivStyle" style="margin-top: -42px;height: 13px;"></div>
+   <ion-list >
+     <ion-item class="item-remove-animate item-avatar item-icon-left categoryleft" style="border: 1px solid #00428a;font-weight: 600;" type="item-text-wrap" ng-click="goVacantesLineamientosPage()">
+       <img src="img/icono_lineamientos.png" class="imgStyle" style="border-radius: 0%;">
+       <h2 class="beneficioSubMenuHeader" style="padding-top: 14px;color:#00428a;">Lineamientos para aplicar</h2>
+     </ion-item>
+
+     <ion-item class="item-remove-animate item-avatar item-icon-left categoryleft" style="border: 1px solid #00428a;font-weight: 600;" type="item-text-wrap" ng-click="goVacantesReclutarPage()">
+       <img src="img/icono_ayudanos_a_reclutar.png" class="imgStyle" style="border-radius: 0%;">
+       <h2 class="beneficioSubMenuHeader" style="padding-top: 14px;color:#00428a;">iAyudanos a reclutar!</h2>
+     </ion-item>
+
+     <ion-item class="item-remove-animate item-avatar item-icon-left categoryleft" style="border: 1px solid #00428a;font-weight: 600;" type="item-text-wrap" ng-click="goVacantesPage()">
+       <img src="img/icono_vacantes.png" class="imgStyle" style="border-radius: 0%;">
+       <h2 class="beneficioSubMenuHeader" style="padding-top: 14px;color:#00428a;">Vacantes</h2>
+     </ion-item>
+
+
+   </ion-list>
+  </ion-content>
+</ion-view>

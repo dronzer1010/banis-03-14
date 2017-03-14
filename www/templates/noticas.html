@@ -1,0 +1,89 @@
+<ion-view view-title="Noticias">
+
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item backButtonClr" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item backButtonClr" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="fontHeaderColor">
+    <div ng-repeat="data in noticiasData">
+        <div class="row"  ng-click="goDetail(data._id)">
+          <div class="col">
+            <img ng-src="{{data.image}}" class="coupenImgStyle"  style="border: none !important;margin-top: -2px;height: 100%;" onError="this.src='img/coupen_1.png'">
+            <div class="item-text-wrap" style="color:#00428a;border-bottom: 1px solid #00428a;">
+          {{data.title}}
+            </div>
+        </div>
+      </div><br/><br/>
+
+       <!-- <div class="row"  style="border-bottom: 1px solid #00428a;" ng-click="goDetail()">
+         <div class="col">
+           <img src="img/coupen_1.png" style="border: none !important;width: 100%;">
+           <img ng-src="http://banistmo-backend.herokuapp.com/{{coupens.image}}" class="coupenImgStyle"  style="border: none !important;" onError="this.src='img/coupen_1.png'">
+           <div class="item-text-wrap" style="color:#00428a;" >
+             Un detalle para llenar tu mesa de sonrisas
+           </div>
+       </div>
+      </div><div></div>
+
+      <div class="row"  style="border-bottom: 1px solid #00428a;" ng-click="goDetail()">
+        <div class="col">
+          <img src="img/coupen_1.png" style="border: none !important;width: 100%;">
+          <img ng-src="http://banistmo-backend.herokuapp.com/{{coupens.image}}" class="coupenImgStyle"  style="border: none !important;" onError="this.src='img/coupen_1.png'">
+          <div class="item-text-wrap" style="color:#00428a;" >
+            Acompananos al desfile de las mil pollears 2017 tu participacion es importante
+          </div>
+      </div>
+
+     </div> -->
+     </div>
+
+    <!-- </div> -->
+
+  </ion-content>
+</ion-view>
+
+
+
+
+
+
+<!-- <ion-view view-title="Noticias">
+
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="fontHeaderColor" style="background-color: #ffdd00;border-bottom: 2px solid #00428a;">
+    <div>
+    <div>
+        <div class="coupenHeaderStyle">Noticias y avisos</div>
+        <div>
+            <img src="img/noticias_1.png" class="coupenImgStyle bottomBorder" style="border-bottom: none;">
+       </div>
+   </div>
+   <div class="formularioDivStyle"></div>
+ </div>
+ <ion-list scroll="true">
+   <ion-item class="item-remove-animate item-avatar item-icon-left categoryleft" type="item-text-wrap" ng-repeat="media in circulars">
+     <i class="icon ion-android-attach" ng-if="media.documentType === 'application/pdf'"></i>
+     <div ng-if="media.documentType === 'application/pdf'" ng-click="view_pdf('https://docs.google.com/viewer?url=https://banistmo-backend.herokuapp.com/'+media.path)" style="padding-top: 9px;"> {{media.title}}</div>
+   </ion-item><br/>
+
+ </ion-list>
+
+  </ion-content>
+</ion-view> -->

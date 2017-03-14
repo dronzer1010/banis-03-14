@@ -1,0 +1,45 @@
+<ion-view view-title="Nominacion Individual">
+    <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+    <ion-nav-buttons side="left">
+        <button class="button back-button buttons button-clear header-item" style="color: #00428a;" ng-click="goBack()">
+            <i class="icon ion-arrow-left-b"></i>
+        </button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+        <button class="button back-button buttons button-clear header-item" style="color: #00428a;" ng-click="gomenuPage()">
+            <i class="icon ion-navicon-round"></i>
+        </button>
+    </ion-nav-buttons>
+
+    <ion-content style="border-bottom: 2px solid #00428a;">
+      <div>
+        <div style="padding-top: 7%;">
+          <!-- <div style="font-size: 15px;font-weight: 700;padding: 20px;"> Escoger Categoria</div>
+          <div style="color: #00428a; font-size: 14px;font-weight: 700;padding-left: 22px;height: 40px;padding-top: 10px;background: mistyrose;"> Liderazgo destacable</div> -->
+
+          <!-- <div style="font-size: 15px;font-weight: 700;padding-top: 13%;padding-left: 6%;padding-bottom: 11px;">Seleccionar o agregar tu Nominado</div> -->
+          <div style="color: #00428a; font-size: 14px;margin-top: 7%;font-weight: 600;padding-left: 6%;padding: 17px;background-color: #c0e3ec;margin-left: 3%;margin-right: 3%;" ng-click="goNominacionSelect()">Liderazgo destacable</div><br/>
+        </div>
+
+
+     <div style="padding: 10%;">
+       <div style="font-size: 15px;font-weight: 600;padding-bottom: 10px;color: slateblue;">CARRERA ESPINOSA, MIGUEL ANGEL</div>
+       <label class="item item-input" style="border: none;">
+         <textarea rows="5" style="border: 1px solid;"></textarea>
+       </label>
+     </div><br/>
+
+        <div style="margin-top: -37px;padding-left: 3%;padding-right: 3%;">
+          <button style="margin:0;color:#000f9f;font-weight: 700;"  class="button button-energized  button-block" ng-click="goNominacionVotarCompletePage()">
+              VOTAR
+          </button>
+        </div><br/>
+
+      </div>
+
+    </ion-content>
+
+</ion-view>

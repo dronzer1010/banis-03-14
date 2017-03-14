@@ -1,0 +1,682 @@
+/* Empty. Add your own CSS if you like */
+/* Empty. Add your own CSS if you like */
+
+
+.menuTextStyle{
+  text-align: center;
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+.imageStyle{
+  max-width: 23px !important;
+  max-height: 22px !important;
+}
+.beneficioSubMenuHeader{
+  padding-top: 5px;
+  margin-right: -40px !important;
+}
+.buttonRightStyle{
+  float: right;
+  margin-top: -5px;
+  width: 65px;
+}
+.rowStyle{
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+}
+.login {
+    background: url(../img/login.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
+
+#logincontent {
+    background-image: url(../img/login.png) !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+/*.home {
+    background: url(../img/home_3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}*/
+.headerImgStyle{
+  height: 40px;
+  width: 82px;
+  margin-top: 3px;
+}
+
+.bar .title.title-left {
+     text-align: center !important;
+}
+
+.tabs-striped.tabs-positive .tabs {
+    background-color: #000f9f;
+}
+/*.ion-tabs.tabs-color-active-positive .tab-item {
+    color: #11205f !important;
+}*/
+
+.tabs-positive > .tabs, .tabs.tabs-positive {
+    border-color: #ffdd00 !important;
+    background-color: #ffdd00 !important;
+    /*background-image: linear-gradient(0deg, #0c60ee, #0c60ee 50%, transparent 50%);*/
+    color: #00428a;
+}
+
+.tabs-striped.tabs-positive .tab-item {
+    color: #00428a;
+    opacity: 1;
+}
+
+    #homecontent {
+        /*background-image: url(../img/home_1.png) !important;*/
+        background-image: url(../img/PORTDADA1-comp.jpg) !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        background-size: cover !important;
+        /*top: 44px !important;*/
+    }
+    ion-tabs.tabs-color-active-positive .tab-item {
+        color: #03468c !important;
+        font-weight: bold !important;
+    }
+    #coupnImg1 {
+        background-image: url(../img/coupen_1.png) !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        /*top: 44px !important;*/
+    }
+    #coupnImg2 {
+        background-image: url(../img/coupen_2.png) !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        /*top: 44px !important;*/
+    }
+.coupenImageFontStyle{
+  margin-top: -31px;
+  font-size: 16px;
+  text-align: right;
+  padding-right: 15px;
+  height: 20px;
+}
+
+.coupenHeaderStyle{
+  background-color: #ffdd00;
+  padding: 8px;
+  font-size: 18px;
+  height: 47px;
+}
+.coupenImgStyle{
+  margin-top: -11px;
+  width: 100%;
+  border-bottom: 1px solid #00428a;
+}
+.formularioParaStyle{
+  font-size: 16px;
+  padding-left: 12px;
+  padding-top: 22px;
+  font-family: inherit;
+}
+.formularioDivStyle{
+  background-color: #ffdd00;
+  margin-top: -5px;
+  height: 40px;
+}
+.fontHeaderColor{
+  color: #00428a !important;
+  font-weight: 500;
+}
+.moreFontColor{
+  font-weight: 700;
+  color: #00428a;
+  font-size: 17px;
+}
+.bottomBorder{
+  border-bottom: 1px solid #00428a !important;
+}
+.fontColorStyle{
+  color: #00428a;
+  font-weight: 600 !important;
+}
+.bar.bar-stable .title {
+    color: #00428a !important;
+    font-weight: 700;
+}
+.firstImageStyle{
+  margin-top: -22px;
+  width: 100%;
+  height: 175px;
+}
+.imageOverlay{
+  position: relative;
+  width: 100%;
+}
+.imgOverlayDiv{
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+}
+.imgOverlaySpan{
+  color: white;
+  font-size: 15px;
+  letter-spacing: -1px;background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/*this is for weather implement : */
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.text-1x5 {
+  font-size: 1.5em;
+}
+
+.text-2x {
+  font-size: 2em;
+}
+
+.text-3x {
+  font-size: 3em;
+}
+.text-5x {
+  font-size: 5em;
+}
+
+.text-10x {
+  font-size: 10em;
+}
+
+.text-1x5,
+.text-2x,
+.text-3x,
+.text-5x,
+.text-10x {
+  line-height: 1em;
+}
+
+/*// text position*/
+.text-top {
+  vertical-align: top;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.text-bottom {
+  vertical-align: bottom;
+}
+.text-baseline {
+  vertical-align: baseline;
+}
+
+/*// convert text to uppercase*/
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*// more text color*/
+.gray {
+  color: gray;
+}
+
+/*// weather page*/
+
+/*// style 1*/
+/*.weather-1 {
+  .weather-header {
+    padding-bottom: 40px;
+
+    .weather-temp .wi {
+      margin-top: 20px;
+    }
+  }
+
+  .weather-daily {
+    margin-bottom: 20px;
+    padding: 15px 0;
+
+    // add more icon color here
+    .wi-cloud {
+      color: $calm;
+    }
+
+    .wi-day-sunny {
+      color: $energized;
+    }
+
+    .wi-day-cloudy {
+      color: $balanced;
+    }
+
+  }
+
+  .slider-pager {
+    bottom: 0;
+
+    .slider-pager-page {
+      width: 10px;
+      margin: 0 1px;
+
+      .icon {
+        font-size: 10px;
+      }
+    }
+  }
+}*/
+.slider-slides {
+  position: relative;
+  height: 100%; }
+
+/*// style 2*/
+.weather-2 {
+  .weather-header {
+    position: relative;
+    height: 240px !important;
+    background: $dark;
+    background-size: auto 100%;
+
+    .weather-temp {
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+
+      &>div {
+        width: 100%;
+      }
+    }
+  }
+
+  .weather-daily {
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 25px 0;
+    border-top: 1px solid #b5b5b5;
+  }
+
+  .slider-pager {
+    bottom: 0;
+    .slider-pager-page {
+      width: 10px;
+      margin: 0 1px;
+
+      .icon {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+/*// style 3*/
+.weather-3 {
+  .item {
+    transition: all 150ms linear;
+
+    .item-content {
+      background: $light;
+    }
+  }
+  .active {
+    background: $dark;
+    background-size: 100% 100%;
+    color: $light;
+
+    .item-content {
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+.wide-as-needed {
+  overflow: scroll;
+  white-space: nowrap;
+}
+.scroll {
+  min-width: 100%;
+}
+.bar.bar-loading {
+  display: block;
+  height: 24px;
+
+  /* starts right below a normal header */
+  top: 44px;
+
+  /* make the text centered vertically and horizontally */
+  text-align: center;
+  padding: 0;
+  line-height: 24px;
+
+  /* transition 'sliding down' (check below)*/
+  -webkit-transition: 200ms all;
+}
+
+
+/*
+ * make the content's top changes animate.
+ * might not always look good, but looks
+ * good when our loader is added & removed
+ */
+.has-header {
+  -webkit-transition: 200ms top;
+}
+.has-header.has-loading {
+  /* 44px (header) + 24px */
+  top: 68px;
+}
+
+/* make loading bar slide up/down */
+.bar-loading.ng-enter,
+.bar-loading.ng-leave.ng-leave-active {
+  height: 0;
+  border-width: 0px;
+}
+.bar-loading.ng-enter.ng-enter-active,
+.bar-loading.ng-leave {
+  height: 24px;
+  border-width: 1px;
+}
+@media(min-width:320px) and (max-width:736px){
+	.weather-scroll {
+		Width:50%;
+		overflow-x: scroll;
+	}
+}
+.imageDivStyle{
+  position: relative;
+  left: 0;
+  width: 100%;
+  top: -5px;
+  background-color: #ffffff;
+  opacity: 0.6;
+  height: 37px;
+  padding: 8px;
+  border-bottom: 1px solid #00428a;
+}
+.imageTextStyle{
+  color: black;
+  font-size: 15px;
+  letter-spacing: -1px;
+  font-size: 20px;
+}
+.induccionParaStyle{
+  font-weight: bolder;
+  padding-left: 13px;
+  margin-top: 0px;
+}
+.induccionBorder{
+  border: 1px solid #00428a !important;
+}
+.backButtonClr{
+  color: #00428a !important;
+}
+.formacionEntertenmentoImgStyle{
+  height: 245px !important;
+  margin-top: -43px;
+}
+.colorStyle{
+  color: #00428a !important;
+}
+/*<<<<<<< HEAD*/
+/*.tabs .tab-item .icon.vacantes {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(../img/briefcase.png);
+  background-size: contain;
+}*/
+
+.tabs .tab-item .icon.beneficios {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(../img/icono_beneficios.png);
+  background-size: contain;
+}
+
+
+.tabs .tab-item .icon.noticias {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 30px;
+  background-image: url(../img/icono-noticias.png);
+  background-size: contain;
+  width: 30px;
+}
+/*.tabs .tab-item .icon.calendario {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(../img/calendar1-flat.png);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}*/
+.tabs .tab-item .icon.ghContigo {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(../img/iconoghcontigo1.png);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+.tabs .tab-item .icon.convenios {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(../img/convenios.png);
+  background-size: contain;
+
+.radioLblStyle{
+  width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.presentationItemStyle{
+  min-height: 65px !important;
+}
+.vdoStyle{
+  padding-left: 15px !important;
+}
+.induccionCoursePara{
+  margin-top: 10px !important;
+}
+
+/*.tabs .tab-item .icon.mcfly {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  background-image: url(../img/icono convenios.png) !important;
+  background-size:contain;
+}*/
+.ion-ios-pulse-strong:before {
+
+  content: url('../img/icono convenios.png') !important;
+
+}
+.tabs .tab-item .icon.convenios {
+ background-repeat: no-repeat;
+ background-position:50%;
+ height: 30px;
+ background-image: url('../img/icono convenios.png');
+ background-size:cover;
+ width: 30px;
+}
+/*************************************/
+.imgHeight{
+  height: 245px !important;
+}
+.spanTextStyle{
+  padding: 14px;
+  top: -53px;
+  height: 49px;
+}
+.divMargin{
+  margin-top: -52px;
+}
+.categoryImgStyle{
+  height: 111px;
+}
+.categoryTExtStyle{
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.categorySpanStyle{
+  color: white;
+  font-size: 25px !important;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+.categoryPaddingStyle{
+  padding-top: 22px;
+}
+.subCatImg{
+  height: 145px;
+}
+.coupenDivStyle{
+  border-bottom: 1px solid #00428a !important;
+}
+.coupenImgStyle{
+  border: none !important;
+}
+.coupenTextStyle{
+  height: 51px;
+  color:#00428a;
+}
+.conDetailContentStyle{
+  border-bottom: 2px solid #00428a !important;
+}
+.conDetailPara{
+  border-bottom: 2px solid #00428a !important;
+  color:#00428a;
+}
+.conDetailPadding{
+  padding-left: 29px
+}
+.conDetailDivStyle{
+  border: none;
+  font-size: 15px;
+}
+.conDetailText{
+  font-weight: 600;
+  color:#00428a;
+}
+.conDetailDataColor{
+  color:#00428a;
+}
+.conDetailImg{
+  margin-top: -11px;
+    width: 100%;
+    border-bottom: 1px solid #00428a;
+}
+.induccionDinamicaHeader{
+  padding-left: 18px;
+}
+.dinamicaFontWeight{
+  font-weight: 700
+}
+.dinamicaDivStyle{
+  padding-left:0px;
+}
+.dimanicaWidth{
+  width: 100%;
+}
+.dinamicaBtnMargin{
+  margin:0;
+}
+.formularioDiv{
+  position: relative;
+  left: 0;
+  width: 100%;
+  top: -42px;
+  background-color: #ffffff;
+  opacity: 0.6;
+  height: 37px;
+  padding: 8px;
+}
+.formularioSpan{
+  color: #00428a;
+  font-size: 15px;
+  letter-spacing: -1px;
+  font-size: 20px;
+}
+.formularioMargin{
+  margin-top: -42px;
+}
+.formularioH2{
+  padding-top: 9px;
+  color:#00428a;
+}
+.vacacionPara{
+  padding-left: 9px;
+  font-weight: 500;
+}
+.vacacionCalenderColor{
+  background-color: lightblue;
+}
+.vacacionPadding{
+  padding-top: 0px !important;
+}
+.vacacionFontWeight{
+  font-weight: 700;
+}
+.vacacionTextArea{
+  height: 95px;
+}
+.vacacionHeaderStyle{
+  height: 35px !important;
+}
+.conSubCatImg{
+  height: 160px;
+}
+.subCatImgMargin{
+  margin-top: -5px !important;
+}
+
+.imgStyleOver{
+    background : rgba(0, 0, 0, 0.7) !important;
+}
+.btnnomiar{
+  margin-top: 263px !important;
+}
+/* for test css : */
+.preguntasItemStyle{
+  background-color: #1f497d !important;
+  color: white !important;
+  height: 38px !important;
+  padding-top: 8px !important;
+}
+.justify{
+  text-align: justify;
+}

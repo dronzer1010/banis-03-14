@@ -1,0 +1,37 @@
+
+<ion-view view-title="CONTACTOS">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <div>
+        <div class="coupenHeaderStyle">Contactos</div>
+        <div>
+            <img src="img/contactos .png" class="coupenImgStyle">
+       </div>
+   </div>
+   <div class="formularioDivStyle"></div>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right categoryleft" ng-repeat="contactData in contactosData" ng-click="goContactosDetailPage(contactData)" style="border-bottom: 1px solid #00428a;" type="item-text-wrap" ng-click="goBeneficiousSubCategoryPage(cat._id)">
+        <img ng-src="http://banistmo-backend.herokuapp.com/{{contactData.image}}" class="imgStyle" ng-if="!!contactData.image">
+        <img src="img/ionic.png" class="imgStyle" ng-hide="!!contactData.image">
+        <h2 class="beneficioSubMenuHeader fontColorStyle">{{contactData.name}}</h2>
+        <div>{{contactData.email}}</div>
+      </ion-item>
+
+    </ion-list>
+
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,93 @@
+<ion-view view-title="Calendario">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+
+  <div ng-repeat="data in acceptedEvents" ng-click="goDetail(data._id)">
+  <div style="color:#00428a;background-color: #ffdd00;padding-left: 20px;height: 27px;padding-top: 2px;font-weight: bolder;">{{data.startDate | date:'dd/MM/yyyy'}}</div>
+  <div class="row">
+    <div class="col col-25">
+      <!-- <img src="img/coupen_1.png" class="imgStyle" style="border-radius: 0px;height: 48px;"> -->
+      <img ng-src="{{data.image}}" class="imgStyle"  style="border-radius: 0px;height: 48px;" onError="this.src='img/coupen_1.png'">
+    </div>
+    <div class="col col-75">
+      <div style="color:#00428a;font-weight: 700;">{{data.title}}</div>
+      <div class="item text-wrap" style="color:#00428a;border: none;padding-left: 2px;padding-top: 6px;">{{data.description}}</div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- <ion-item class="item-remove-animate item-avatar induccionBorder colorStyle" style="min-height: 89px;" type="item-text-wrap" ng-click="goCourseContentPresentationList()">
+    <img src="img/coupen_1.png" class="imgStyle" style="border-radius: 0px;">
+    <div class="row rowStyle">
+      <div class="col col-75">
+        <h3 style="color:#00428a;">Presentaciones</h3>
+        <h3 style="color:#00428a;">Entrance: 12mn</h3>
+      </div>
+      <div class="col alignRightDiv"></div>
+    </div>
+  </ion-item> -->
+</ion-content>
+
+
+  <!--  for show calender:-->
+  <!-- <ion-content class="fontHeaderColor" style="border-bottom: 2px solid #00428a;">
+       <div class="row" style="background-color: #387ff5;padding: 0px !important;">
+       <div class="col-xs-12 col-md-12 calender-buttons">
+         <button class="button button-small button-positive btnLineHeight" ng-disabled="isToday()" ng-click="today()" style="font-size: 11px;background-color: royalblue;">Today</button>
+         <button class="button button-small button-positive btnLineHeight" ng-click="changeMode('month')" style="font-size: 11px;background-color: royalblue;">M</button>
+         <button class="button button-small button-positive btnLineHeight" ng-click="changeMode('week')" style="font-size: 11px;background-color: royalblue;">W</button>
+         <button class="button button-small button-positive btnLineHeight" ng-click="changeMode('day')" style="font-size: 11px;background-color: royalblue;">D</button>
+       </div>
+     </div>
+     <calendar calendar-mode="calendar.mode" event-source="calendar.eventSource" ng-model="calendar.currentDate" on-double-tap="onDoubleTap(calendar.currentDate, events)"
+      range-changed="reloadSource(startTime, endTime)"  step="30">
+  </ion-content> -->
+
+
+</ion-view>
+<!-- <script id="templates/modal.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar-positive" align-title="center">
+            <h1 class="title">Event Detail</h1>
+            <button class="button button-icon icon ion-ios-close-empty" ng-click="modal.hide()"></button>
+        </ion-header-bar>
+        <ion-content overflow-scroll="true" padding="true" class="has-header">
+          <div class="card">
+
+           <div class="item item-text-wrap">
+             <div class="row">
+               <div class="col col-40" style="font-weight: 600;">Event Title:</div>
+               <div class="col col-60"><span>{{events.title}}</span></div>
+            </div>
+            <div class="row">
+              <div class="col col-40" style="font-weight: 600;">Event Start Date:</div>
+              <div class="col col-60">{{events.selectedStartDate}}</div>
+           </div>
+           <div class="row">
+             <div class="col col-40" style="font-weight: 600;">Event End Date:</div>
+             <div class="col col-60">{{events.selectedStartDate}}</div>
+          </div>
+          <div class="row">
+            <div class="col col-40" style="font-weight: 600;">Event Description:</div>
+            <div class="col col-60">{{events.description}}</div>
+         </div>
+           </div>
+        </div>
+
+        </ion-content>
+    </ion-modal-view>
+</script> -->

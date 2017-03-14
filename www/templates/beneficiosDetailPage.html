@@ -1,0 +1,64 @@
+<ion-view view-title="{{coupenDetails.title}}">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content  style="border-bottom: 2px solid #00428a;">
+    <div>
+       <!-- <div class="coupenHeaderStyle">{{coupenDetails.title}}</div> original -->
+        <div>
+            <img ng-src="{{coupenDetails.image}}" class="coupenImgStyle imgHeight" style="margin-top: 0px;border-bottom: none;height: 100%;" onError="this.src='img/beneficos.png'">
+           <!-- <img src="img/beneficos.jpg" class="coupenImgStyle" ng-hide="!!coupenDetails.image" style="height: 245px !important;">
+            <img ng-src="http://banistmo-backend.herokuapp.com/{{coupenDetails.image}}" class="coupenImgStyle" ng-if="!!coupenDetails.image" onError="this.src='img/beneficos.jpg'"> original-->
+       </div>
+   </div>
+    <div style="border-bottom: 2px solid #00428a;color:#00428a;">
+
+        <!--<p  style="padding: 20px;font-weight: 500;text-align: justify;"> original beneficios-->
+
+        <p style="padding: 12px;padding-top: 12px;text-align: justify;">{{coupenDetails.description}}</p>
+        <!--<p class="formularioParaStyle" style="padding-left: 29px;"><div class="coupenHeaderStyle">{{coupenDetails.content}}</div></p> original modified-->
+
+        <!--<p class="formularioParaStyle" style="padding-left: 29px;">20% de descunto en todos ios platos con precio regular en la APP servicio de entrega gratulta a lass torres afiliadsa constant descuentos y promociones.</p> original -->
+   </div>
+
+   <div style="border-bottom: 2px solid #00428a;color:#00428a;">
+     <div class="item item-text-wrap" style="border: none;font-size: 15px;">
+     <!--<div class="row"> original-->
+
+
+         <div class="item item-text-wrap" style="background-color: #ffffff ;border: none;color: #00428a;font-size: 15px;padding-left: 26px;padding-top: 5px;">
+             <div class="item-text-wrap" style="text-align:center;"><b>Contacto:</b> <br/> {{coupenDetails.contact}}</div>
+             <div class="item-text-wrap" style="text-align:center;"><b>Número de teléfono:</b> <br/> {{coupenDetails.phone1}}</div>
+             <div class="item-text-wrap" style="text-align:center;"><b></b>  {{coupenDetails.phone2}}</div>
+             <div class="item-text-wrap" style="text-align:center;"><b>Correo electrónico</b>: <br/> {{coupenDetails.email}}</div>
+
+         </div>
+
+      </div>
+                  <!--<div class="col col-50" style="font-weight: 600;color:#00428a;">Contacto Anarella Miro Telefono :</div> original-->
+      <!--<div class="col col-50" style="color:#00428a;"><span>123-456</span></div> original-->
+
+
+    <!-- <div class="row">
+     <div class="col col-25" style="font-weight: 600;color:#00428a;">Correo:</div>
+     <div class="col col-75" style="color:#00428a;">
+       <a ng-href="mailto:{{ test_email }}" target="_blank">test@gmail.com</a>
+     </div>
+
+     </div> original -->
+  </div>
+</div>
+  </ion-content>
+</ion-view>

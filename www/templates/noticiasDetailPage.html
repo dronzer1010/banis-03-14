@@ -1,0 +1,39 @@
+<ion-view view-title="Noticias Detail Page">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content  style="border-bottom: 2px solid #00428a;">
+    <div>
+        <div class="coupenHeaderStyle">{{myData.title}}</div>
+        <div>
+            <img src="img/formulario_1.png" style="width: 100%;border: 1px solid #00428a;" ng-hide="!!myData.image">
+            <img ng-src="http://banistmo-backend.herokuapp.com/{{myData.image}}" style="width: 100%;border: 1px solid #00428a;" ng-if="!!myData.image">
+       </div>
+   </div>
+   <div class="formularioDivStyle"></div>
+
+
+  <h3 style="padding-left: 15px;font-size: 15px;font-weight: 600;color: #00428a;font-size: 19px !important;">{{myData.title}}</h3>
+   <div class="formularioParaStyle" style="color: black;">{{myData.content}}</div><br/>
+   <ion-list scroll="true">
+     <ion-item class="item-remove-animate item-avatar item-icon-left categoryleft" type="item-text-wrap" style="border:1px solid #00428a">
+       <i class="icon ion-android-attach" ng-if="!!myData.attachedDocument"></i>
+       <div ng-if="!!myData.attachedDocument" ng-click="view_pdf('https://docs.google.com/viewer?url=https://banistmo-backend.herokuapp.com/'+myData.attachedDocument)" style="padding-top: 9px;"> Pdf file</div>
+     </ion-item><br/>
+
+
+   </ion-list>
+  </ion-content>
+</ion-view>

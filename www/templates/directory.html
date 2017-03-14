@@ -1,0 +1,109 @@
+<ion-view view-title="Directorio">
+    <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+    <ion-nav-buttons side="left">
+        <button class="button back-button buttons button-clear header-item" style="color: #00428a;" ng-click="goBack()">
+            <i class="icon ion-arrow-left-b"></i>
+        </button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+        <button class="button back-button buttons button-clear header-item" style="color: #00428a;" ng-click="gomenuPage()">
+            <i class="icon ion-navicon-round"></i>
+        </button>
+    </ion-nav-buttons>
+
+    <ion-content style="border-bottom: 2px solid #00428a;">
+      <div>
+        <div class="row">
+          <div class="col col-5">
+          </div>
+            <div class="col col-90">
+              <div class="directory_wrap">
+                <div class="bar bar-header item-input-inset">
+                    <label class="item-input-wrapper">
+                        <i class="icon ion-ios-search placeholder-icon"></i>
+                        <input type="search" placeholder="Search" ng-model="searchtname">
+                    </label>
+                    <button class="button button-clear">
+                        Cancel
+                    </button>
+                </div>
+                <!-- ng-repeat="item in items | filter: searchtname" -->
+                <ul class="list" data-ng-init="names=[{name:'(seleccionar todos los resultados de)'}, {name : 'ACEVEDO, MIGUEL ANGEL'}, {name : 'ARIAS GONZALEZ, JESUS MIGUEL'}, {name : '  ATHANASIADIS, MIGUEL'}]">
+                    <li class="item item-checkbox"  ng-repeat="x in names | filter: searchtname">
+                        {{ x.name }}
+                        <label class="checkbox">
+                            <input type="checkbox">
+                        </label>
+                    </li>
+
+                </ul>
+            </div>
+          </div>
+          <div class="col col-5">
+
+          </div>
+
+
+        </div>
+
+        <div style="padding-left: 3%;padding-right: 3%;">
+          <button class="button button-energized  button-block" ng-click="openDirectorytModal()" style="color:#000f9f;font-weight: 700;">
+              Ver
+          </button>
+        </div><br/>
+        <!-- <div>
+             <center>
+               <button class="button button-dark" ng-click="openDirectorytModal()" style="margin-top: 31px;font-size: 13px; min-height: 1px;width: 36%;background-color: #a2a2a2;border: #a2a2a2;">
+               Envair
+             </button>
+           </center>
+        </div><br/> -->
+      </div>
+
+
+
+    </ion-content>
+
+</ion-view>
+
+
+<script id="templates/directoryDetail.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar-positive" align-title="center" style="background-color: white;">
+          <button class="button" ng-click="closeDirectoryModal()" style="color: #00428a;background-color: white;border: none;font-weight: bold;font-size: 18px;">Close</button>
+            <h1 class="title" style="font-weight: 700;color: #00428a;font-size: 17px;">Mi Cuenta</h1>
+            <button class="button button-icon icon ion-power" ng-click="logout()" style="color: #00428a;"></button>
+        </ion-header-bar>
+        <ion-content style="background-color: #ffdd00;">
+          <div class="row">
+            <div class="col col-20"></div>
+            <div class="col col-60" >
+              <img src="img/ben.png" style="width: 100%;border: 1px solid #00428a;" >
+              <!-- <img ng-src="http://banistmo-backend.herokuapp.com/{{contactosData.image}}" style="width: 100%;border: 1px solid #00428a;" ng-if="!!contactosData.image"> -->
+            </div>
+            <div class="col col-20"></div>
+         </div>
+
+         <div class="item item-text-wrap" style="background-color: #ffdd00;border: none;font-size: 17px;padding-left: 68px;padding-top: 25px;">
+          <div class="item-text-wrap" style="font-weight: 600;">Name: </div>
+          <div class="item-text-wrap" style="font-weight: 600;">Boss: </div>
+          <div class="item-text-wrap" style="font-weight: 600;">Buisness Unit: </div>
+          <div class="item-text-wrap" style="font-weight: 600;">Department: </div>
+          <div class="item-text-wrap" style="font-weight: 600;">Centro de costo: </div>
+          <div class="item-text-wrap" style="font-weight: 600;">Position: </div>
+          <div class="item-text-wrap" style="font-weight: 600;">Ubcacion (Place): </div>
+          <div class="item-text-wrap" style="font-weight: 600;">Email: </div>
+          <div class="item-text-wrap" style="font-weight: 600;">Extention: </div>
+          <div class="item-text-wrap" style="font-weight: 600;">Office Telephone: </div>
+          <div class="item-text-wrap" style="font-weight: 600;">Mobile Phone: </div>
+
+
+         </div>
+
+
+        </ion-content>
+    </ion-modal-view>
+</script>

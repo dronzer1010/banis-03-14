@@ -1,0 +1,41 @@
+<ion-view view-title="Vacantes">
+
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+ <ion-list ng-repeat="vac in vacancy">
+   <ion-item class="item" style="border:none;color:#00428a;" type="item-text-wrap">
+     <h2 style="font-weight: 600;color:#00428a;">{{vac.title}}</h2>
+     <div style="font-size: 12px;">{{vac.description}}</div> 
+     <div class="row">
+        <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click="view_pdf(vac.file)">
+            <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Descripcion
+        </div>
+    </div>    
+   </ion-item>
+ </ion-list>
+ 		<button class="button  button-block" style="background-color: #12a7dd; width:50%; margin-left:25%;" ng-click="apply()" ng-show="showApplyBtn">APLICAR</button>
+        <div class="form-group" ng-show="showApplyContent" style="padding:16px;">
+            <label for="" style="color:#00428a;">Cargar CV: <span class="text-danger">*</span></label>        
+            <input type="file" style="width:50%; margin-left:25%;" id="file1" name="file" required ng-files="getTheFiles($files)" />          
+            <input type="button" class="button  button-block" style="background-color: #12a7dd;width:50%; margin-left:25%;" ng-click="uploadFiles()" value="Cargar" />
+        </div> 
+		<div class="form-group" ng-show="showSubmitBtn">
+ 			<button class="button  button-block" style="background-color: #12a7dd;width:50%; margin-left:25%;" ng-click="submitVacancy()">ENVIAR</button>        
+        </div>
+		<div class="form-group" ng-show="showSuccessMsg">
+			 <h2 style="font-weight: 600;color:#00428a;text-align:center;font-size:16px;padding:20px;">Su aplicación ha sido enviada exitosamente</h2>
+        </div>        
+  </ion-content>
+
+</ion-view>

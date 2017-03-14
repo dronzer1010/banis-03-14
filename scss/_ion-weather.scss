@@ -1,0 +1,179 @@
+/*
+This file is for ionWeather plugin
+Import it your ionic.app.scss file
+*/
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.text-1x5 {
+  font-size: 1.5em;
+}
+
+.text-2x {
+  font-size: 2em;
+}
+
+.text-3x {
+  font-size: 3em;
+}
+.text-5x {
+  font-size: 5em;
+}
+
+.text-10x {
+  font-size: 10em;
+}
+
+.text-1x5,
+.text-2x,
+.text-3x,
+.text-5x,
+.text-10x {
+  line-height: 1em;
+}
+
+// text position
+.text-top {
+  vertical-align: top;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.text-bottom {
+  vertical-align: bottom;
+}
+.text-baseline {
+  vertical-align: baseline;
+}
+
+// convert text to uppercase
+.uppercase {
+  text-transform: uppercase;
+}
+
+// more text color
+.gray {
+  color: gray;
+}
+
+// weather page
+
+// style 1
+.weather-1 {
+  .weather-header {
+    padding-bottom: 40px;
+
+    .weather-temp .wi {
+      margin-top: 20px;
+    }
+  }
+
+  .weather-daily {
+    margin-bottom: 20px;
+    padding: 15px 0;
+
+    // add more icon color here
+    .wi-cloud {
+      color: $calm;
+    }
+
+    .wi-day-sunny {
+      color: $energized;
+    }
+
+    .wi-day-cloudy {
+      color: $balanced;
+    }
+
+  }
+
+  .slider-pager {
+    bottom: 0;
+
+    .slider-pager-page {
+      width: 10px;
+      margin: 0 1px;
+
+      .icon {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+// style 2
+.weather-2 {
+  .weather-header {
+    position: relative;
+    height: 240px;
+    background: $dark;
+    background-size: auto 100%;
+
+    .weather-temp {
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+
+      &>div {
+        width: 100%;
+      }
+    }
+  }
+
+  .weather-daily {
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 25px 0;
+    border-top: 1px solid #b5b5b5;
+  }
+
+  .slider-pager {
+    bottom: 0;
+
+    .slider-pager-page {
+      width: 10px;
+      margin: 0 1px;
+
+      .icon {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+// style 3
+.weather-3 {
+  .item {
+    transition: all 150ms linear;
+
+    .item-content {
+      background: $light;
+    }
+  }
+  .active {
+    background: $dark;
+    background-size: 100% 100%;
+    color: $light;
+
+    .item-content {
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+}

@@ -1,0 +1,70 @@
+<ion-view view-title="Event Info">
+  <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="fontHeaderColor" style="border-bottom: 2px solid #00428a;" scroll="true">
+
+    <div class="card">
+
+     <div class="item item-text-wrap">
+       <div class="row">
+         <div class="col col-40" style="font-weight: 600;">Event Title:</div>
+         <div class="col col-60"><span>{{eventDetails.event}}</span></div>
+      </div>
+      <div class="row">
+        <div class="col col-40" style="font-weight: 600;">Event Start Date:</div>
+        <div class="col col-60">{{eventDetails.startDate}}</div>
+     </div>
+     <div class="row">
+       <div class="col col-40" style="font-weight: 600;">Event End Date:</div>
+       <div class="col col-60">{{eventDetails.endDate}}</div>
+    </div>
+    <div class="row">
+      <div class="col col-40" style="font-weight: 600;">Event Description:</div>
+      <div class="col col-60">{{eventDetails.description}}</div>
+   </div>
+     </div>
+  </div>
+    <!-- <form class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Title</span>
+          <input type="text" placeholder="Event Title" ng-model="acceptedEvents.title">
+        </label>
+
+
+        <label class="item item-input item-stacked-label">
+              <span class="input-label">Start/Time</span>
+              <label class="item datePicker" style="margin-right:15px;"  name="date" ng-model="event.value">
+                  <strong ng-if="event.selectedStartDate || event.selectedStartTime">{{event.selectedStartDate | date:'MM/dd/yyyy'}} at {{event.selectedStartTime | date:'hh:mm a' : 'UTC'}}</strong>
+              </label>
+        </label>
+        <label class="item item-input item-stacked-label">
+              <span class="input-label">End/Time</span>
+              <label class="item datePicker" style="margin-right:15px;" ng-model="event.value" name="date">
+                  <strong ng-if="event.selectedEndDate || event.selectedEndTime">{{event.selectedEndDate | date:'MM/dd/yyyy'}} at {{event.selectedEndTime | date:'hh:mm a' : 'UTC'}}</strong>
+              </label>
+        </label> -->
+
+
+        <!-- <label class="item">
+          <button class="button button-block button-positive">Create Event</button>
+        </label> -->
+
+
+    </form>
+
+  </ion-content>
+
+
+</ion-view>

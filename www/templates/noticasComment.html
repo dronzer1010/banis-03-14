@@ -1,0 +1,26 @@
+<ion-view view-title="Add a comment" style="color: #00428a;">
+
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="godetailPage()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content style="color: #00428a;">
+    <form class="list">
+
+      <div class="row">
+        <textarea ng-model="comment" placeholder="Add a comment" name="textarea_2" id="textarea_2" style="height: 95px;border: 1px solid #00428a;width: 100%;"></textarea>
+      </div>
+      <button class="button button-full button-stable">Send</button>
+    </form>
+
+  </ion-content>
+
+</ion-view>

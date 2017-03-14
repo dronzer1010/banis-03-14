@@ -1,0 +1,301 @@
+<ion-view view-title="Beneficios">
+    <!-- <ion-nav-title>
+      <img class="headerImgStyle" src="img/logo.png">
+      </ion-nav-title> -->
+    <ion-nav-buttons side="left">
+        <button class="button back-button buttons button-clear header-item" style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+      </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button back-button buttons button-clear header-item" style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+      </button>
+    </ion-nav-buttons>
+    <ion-content class="fontHeaderColor" overflow-scroll="true">
+        <!-- <div>
+         <img src="img/beneficios-crop.jpg" class="coupenImgStyle bottomBorder" style="height: 245px !important;">
+         <div  style="position: relative;left: 0;width: 100%;top: -42px;background-color: #ffffff;opacity: 0.6;height: 37px;padding: 8px;">
+           <span  style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;">
+           Beneficios</span>
+         </div>
+         </div> -->
+        <div>
+            <img src="img/beneficios-crop.jpg" class="coupenImgStyle bottomBorder" style="height: 245px !important;">
+            <div style="position: relative;left: 0;width: 100%;top: -42px;background-color: #ffffff;opacity: 0.6;height: 37px;padding: 8px;">
+                <span style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">
+            Beneficios</span>
+            </div>
+        </div>
+        <p style="color:black;padding-left: 16px;padding-right: 16px;margin-top: -18px;text-align: justify;">Para nosotros es de vital importancia el bienestar continuo de nuestros colaboradores y sus seres queridos. Nuestro programa de beneficios contribuye a tu calidad de vida y permite que planifiques tu futuro y el de tu familia. ¡Te invitamos a
+            revisarlos!
+        </p>
+        <!-- this is for only one content show or hide -->
+        <div>
+            <div class="form-group" ng-click="showOne()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+               Seguro de vida y salud
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show1===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show1===true"></i>
+            </div>
+            <div class="form-group" ng-show="show1" style="color:black; padding-top:10px;">
+                <p class="text-wrap" style="padding: 12px;padding-top: 0px;">Banistmo y subsidiaria, provee una póliza de vida y salud cubierta al 100% para todos los colaboradores permanentes. En el plan de salud, se puede vincular a los dependientes del colaborador (cónyuge e hijos) en donde el colaborador solo
+                    debe cubrir un 20% del costo. El plan médico incluye beneficio dental, beneficio óptico, hospitalización, visitas a médicos generalistas, especialistas y sub-especialistas, entre otros.</p>
+                <p style="padding: 12px;padding-top: 0px;">Te exhortamos a consultar los detalles de este beneficio: Plan de Seguro Médico</p>
+                <div class="row">
+                  <!--  <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%; padding:8px;font-size:15px;"> original -->
+                        
+                        <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Beneficios-Mapfre.pdf")'>
+                        
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Beneficios Mapfre
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                <p style="padding: 12px;padding-top: 0px;">Adicional puedes consultar también:</p>
+
+                <div class="row">
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Red-Medica-Mapfre.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Red médica Mapfre
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+               
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Lista-de-Clinicas-de-Medicina-Primaria-Gratis-y-Co-pago.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Beneficios de Mi Clinica Hospital
+                    </div>
+                </div>
+
+                <br />
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Lista-de-Clinicas-de-Medicina-Primaria-Gratis-y-Co-pago.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Lista de Clinicas de Medicina Primaria gratis y co-pago
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Valores-Agregado.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Valores Agregados
+                    </div>
+                </div>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Formularios</div>
+
+
+                <br />
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Reclamo-de-Seguros-de-Hospitalizacion.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Reclamos de Seguro de hospitalización y
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Solicitud-de-Preautorizacion.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Solicitud de Pre-Autorización
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+
+                         <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/SOLICITUD-DE-ACTUALIZACION-O-CAMBIO-DE.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Solicitud de actualización o cambio
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+
+                         <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/SOLICITUD-DE-ADICION-DE-DEPENDIENTES-con-cuestionario.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Solicitud de Adición de Dependientes con cuestionario
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/AUTORIZACION-PARA-DESCUENTO-DE-SALARIO.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Autorización para Descuento de Salario
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br/>
+        <div>
+            <div class="form-group" ng-click="showTwo()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Plan de ahorro para el retiro
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show2===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show2===true"></i>
+            </div>
+            <div class="form-group" ng-show="show2" style="padding-left: 16px; padding-right: 16px; padding-top:10px; color:#000;">
+                <p>Banistmo ofrece un plan de ahorros contributivo, colaborando con un generoso aporte en donde se iguala su aportación hasta un porciento máximo, para ayudarles a aumentar los ahorros para su retiro.</p>
+                <p>El fondo de Pensiones te permite planificar tu jubilación y asegurar tu bienestar económico y el de tu familia, de tal manera, que cuando llegues a edad de retiro, pueda mantener la misma calidad de vida que tenías cuando estabas laborando.</p>
+                <p>Elegibilidad:<br /> Todos los colaboradores permanentes desde el primer día de ingreso a la institución.
+                </p>
+                <p>Aportes:<br /> Banistmo igualará dicho aporte hasta un máximo del 5% del salario mensual del colaborador.<br>Descuento directo de planilla
+                </p>
+                <p>Derechos sobre los aportes del Banco:<br /> Los aportes realizados por Banistmo comenzarán a pertenecer al colaborador de forma gradual y al cabo de 5 años en el plan. (ver cuadro adjunto).
+                </p>
+                <p>Para consultas y trámites contactar a:</p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Progreso: </div>
+                <p> Dixania Valderrama Arrocha<br /> Asesora de Pensiones<br /> Teléfono: 340-0300 Ext. 316<br /> Cel.: (507) 6679-9859 / 6670-4180<br /> ventas7@progreso-afp.com
+                </p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Profuturo: </div>
+                <p>Osiris Chin <br /> Teléfono: 300-9700 Ext (9874)<br /> Cel.: (507) 6611-4073<br /> Osiris.chin@profuturo.com.pa
+                </p>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div class="form-group" ng-click="showThree()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Clínica Empresarial
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show3===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show3===true"></i>
+            </div>
+            <div class="form-group" ng-show="show3" style="padding-left: 16px; padding-right: 16px; padding-top:10px; color:#000;">
+                <p>La salud laboral es prioridad para nuestra organización. Para darle seguimiento a la calidad de vida integral de nuestros colaboradores, contamos con dos clínicas de atención médica:</p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Casa Matriz </div>
+                <p>Teléfono de contacto:<br /> Enfermera 29147<br /> Doctor 29148<br /> Horarios de atención: De lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 5:00 p.m.<br /> Ubicación: Casa Matriz, piso 15
+                </p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Plaza Edison </div>
+                <p> Teléfono de contacto: <br /> Enfermera 015 5551 <br /> Doctor 015 5552 <br /> Horario de atención: De lunes a viernes de 7:30 a.m. a 1:00 p.m. y de 2:00 p.m. a 4:30 p.m. <br /> Ubicación: planta baja
+                </p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Actualmente mantenemos los siguientes programas de salud: </div>
+                <p>Programa de Diabetes <br /> Programa de Sobrepeso y Obesidad <br /> Programa de Dislipidemia <br /> Programa de Hipertensión
+                </p>
+            </div>
+        </div>
+        <br />
+        <div>
+            <div class="form-group" ng-click="showFour()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Actividades deportivas
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show4===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show4===true"></i>
+            </div>
+            <div class="form-group" ng-show="show4" style="padding-left: 16px; padding-right: 16px; padding-top:10px; color:#000;">
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Vivimos el Deporte </div>
+                <p>En Banistmo se realizan distintas ligas deportivas a lo largo del año, con el objetivo de estimular la calidad de vida de nuestros colaboradores. Ya sea en participaciones de ligas internas o interbancarias, la organización cubrirá los
+                    costos de uniformes, alquiler de canchas y pago de árbitros.</p>
+                <p>Una vez se realice la convocatoria inicia el proceso de inscripción a las ligas, que se realiza mediante una convocatoria a través del buzón de GH_Calidad de Vida, cuando se dé inicio a la temporada.</p>
+                <p>
+                    Actualmente, nuestros colaboradores pueden participar en las siguientes ligas:<br> Futbol Femenino y Masculino (Interno e Interbancario)<br> Softbol (Interno e Interbancario)<br> Tenis de mesa<br> Bolos (interna e interbancaria)<br>                    Voleibol (interna e interbancaria)<br> Baloncesto (interna e interbancaria)
+                </p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Nuestro Running Team Banistmo</div>
+                <p>Para los colaboradores que les gusta participar en carreras de trail o de ciudad, este equipo que ya suma 619 personas, cumplirá con todas sus expectativas. El proceso de inscripción se realiza a través del buzón GH_Calidad de Vida dos
+                    veces al año (a inicio y a mediados) y se renueva cada año.</p>
+                <p>Para los colaboradores participantes del team, Banistmo cubrirá el costo de la inscripción y proporcionará una camiseta, que deberán utilizar en las carreras que participen como miembro del Running Team.</p>
+                <p>Actualmente, se realizan entrenamientos los martes, miércoles y jueves en la Cinta Costera con la asesoría de un instructor certificado en la materia, que ayudará a todos los colaboradores a mejorar las técnicas que exige el running.</p>
+                <p>Es importante mencionar que podrás asistir a una carrera mensual, entre ellas las del Circuito Asics y que a la hora de inscribirte debes tomar en consideración que los colaboradores que se anoten a las carreras y no asistan, tendrán la
+                    penalidad de no asistir a la próxima carrera en la que quieran participar.</p>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div class="form-group" ng-click="showFive()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Uniformes
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show5===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show5===true"></i>
+            </div>
+            <div class="form-group" ng-show="show5" style="padding-left: 16px; padding-right: 16px; padding-top:10px; color:#000;">
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Nuestro vestuario refleja lo que somos</div>
+                <p>El cuidado personal habla bien de ti y de la entidad que estas representando frente a las demás personas.</p>
+                <p>Conscientes de esto, en Banistmo hemos desarrollado este código de presentación personal en el que teniendo en cuenta la diferencia y los diversos gustos, procuramos crear ambientes laborales agradables para sentirnos más cómodos, pero
+                    mostrando respeto hacia nuestros colegas y clientes con una imagen propia de la actividad financiera.</p>
+                <br />
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Beneficios-Mapfre.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Beneficios Mapfre
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div class="form-group" ng-click="showSix()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Préstamo de urgencia
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show6===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show6===true"></i>
+            </div>
+            <div class="form-group" ng-show="show6" style="padding-left: 16px; padding-right: 16px; padding-top:10px; color:#000;">
+                <p>Queremos garantizar a los empleados la seguridad de contar con un apoyo económico que les brinde una ayuda rápida para resolver imprevistos y urgencias domésticas tales como:</p>
+                <p>Gastos médicos del colaborador y familiares inmediatos, no cubiertos por el seguro</p>
+                <p>Gastos de funerales de familiares inmediatos.<br> Incendio, robo, inundación, etc.<br> Reparación de artefactos de primera necesidad: refrigeradora, estufa y lavadora. Se excluyen gastos de mantenimiento preventivo.
+                </p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos:</div>
+
+                <br />
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/SOLICITUD-DE-PRESTAMO-PARA-EMPLEADOS.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Solicitud Préstamo Empleado Urgencia
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Documento-APC.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Documento APC
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Carta-de-Descuento.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Carta de Descuento
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/beneficios/Pagare.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Pagaré
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div class="form-group" ng-click="showSeven()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Seguros
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show7===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show7===true"></i>
+            </div>
+            <div class="form-group" ng-show="show7" style="padding-left: 16px; padding-right: 16px; padding-top:10px; color:#000;">
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Seguro de auto</div>
+                <p>En SURA sabemos que tu automóvil es más que un medio de transporte y representa tu estilo de vida. Por ello decidimos ofrecerte un amplio portafolio de servicios que te garantizan seguridad, además de la efectividad que requieres en este
+                    ámbito: protección de tu vehículo, nuevos beneficios pensados para ti y el acompañamiento de calidad que solo encontrarás en SURA.</p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Seguro de hogar</div>
+                <p>Los seguros de Multiriesgo familiar están especialmente diseñados para cubrir los daños o pérdidas materiales que puedan afectar tu vivienda o los bienes contenidos en ella. Así mismo, te permite estar protegido ante una posible responsabilidad
+                    civil como producto de lesiones o daños materiales que afecten a terceros.</p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Seguro de vida</div>
+                <p>En SURA tenemos las soluciones que le darán tranquilidad a los suyos en caso de su inesperada ausencia. El seguro de vida consiste en respaldar a sus seres queridos con los ingresos que ya no le podría brindar a causa de su defunción.
+                    También es utilizado para liberar sus deudas hipotecarias que de otra manera tendrían que ser asumidas por sus familiares. Lo más importante que le ofrece el seguro de vida es la tranquilidad que sus seres queridos tendrán para hacerle
+                    frente a los gastos cotidianos del hogar sin recibir la presión económica causada por su fallecimiento.</p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Seguro de incendio</div>
+                <p>Un plan especialmente diseñado para proteger a tu vivienda que requieren de una protección completa contra todos los riesgos relacionados con posibles daños o pérdidas materiales.</p>
+                <div style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Linea de atencion 800-8888<br>www.sura.com.pa</div>
+                <p></p>
+            </div>
+        </div>
+        <!-- <ion-list>
+         <div ng-repeat="group in groups">
+           <ion-item class="item-stable"  ng-click="toggleGroup(group)"
+           style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;"
+                     ng-class="{active: isGroupShown(group)}">
+                     style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;"
+              {{group.name}}&nbsp;
+             <i class="icon" style="float: right;" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+           </ion-item><br/>
+           <div class="item-accordion" ng-repeat="item in group.items" ng-show="isGroupShown(group)" style="color:black;">
+             <p style="padding: 12px;font-weight: 700;">{{item.que}}</p>
+             <p class="text-wrap" style="padding: 12px;padding-top: 0px;">{{item.ans}}</p>
+           </div>
+         </div>
+         </ion-list> -->
+    </ion-content>
+</ion-view>

@@ -1,0 +1,484 @@
+<ion-view view-title="Segmento Staff">
+    <!-- <ion-nav-title>
+    <img class="headerImgStyle" src="img/logo.png">
+  </ion-nav-title> -->
+    <ion-nav-buttons side="left">
+        <button class="button back-button buttons button-clear header-item" style="color: #00428a;" ng-click="goBack()">
+            <i class="icon ion-arrow-left-b"></i>
+        </button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+        <button class="button back-button buttons button-clear header-item" style="color: #00428a;" ng-click="gomenuPage()">
+            <i class="icon ion-navicon-round"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="fontHeaderColor" overflow-scroll="true">
+
+        <!-- <div>
+        <img src="img/staff-crop.jpg" class="coupenImgStyle bottomBorder" style="height: 245px !important;">
+        <div  style="position: relative;left: 0;width: 100%;top: -42px;background-color: #ffffff;opacity: 0.6;height: 37px;padding: 8px;">
+          <span  style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;">
+          Segmento Staff</span>
+        </div>
+    </div> -->
+
+        <div>
+            <img src="img/segmento-staff-crop.jpg" class="coupenImgStyle bottomBorder" style="height: 245px !important;">
+            <div style="position: relative;left: 0;width: 100%;top: -42px;background-color: #ffffff;opacity: 0.6;height: 37px;padding: 8px;">
+                <span style="color: #00428a;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">
+          Segmento Staff</span>
+            </div>
+        </div>
+
+        <p style="color:black;padding-left: 16px;padding-right: 16px;margin-top: -18px;text-align: justify;">Segmento Staff es una propuesta de valor para los colaboradores de Banistmo. Nuestra propuesta se enfoca en brindar una atención personalizada y confidencial a nuestros colaboradores. Te invitamos a que explores este sitio y conozcas nuestras ofertas y promociones.
+
+        </p>
+        <div>
+            <div class="form-group" ng-click="showOne()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Conócenos
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show1===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show1===true"></i>
+            </div>
+            <div class="form-group" ng-show="show1" style="color:black; padding-top:10px; padding-left: 16px; padding-right: 16px;">
+                <p>
+                    Olga Hazera - Gerente - <span style="color:red;">321-9526</span> ext. 29526 - olga.hazera@banistmo.com<br />
+                <br> 
+                Andy Bethancourt - Analista - <span style="color:red;">321-9314</span> ext. 29314 - andy.bethancourt@banistmo.com<br />
+                    <br> Marielis A. Rodríguez - Jefe II - <span style="color:red;">321-9315</span> ext. 29315 - marielis.a.rodriguez@banistmo.com<br />
+                    <br> Stephany I. Fuentes - Ejecutivo Segmento Staff - <span style="color:red;">321-9312</span> ext. 29312 - stephany.i.fuentes@banistmo.com<br />
+                    <br> Iraldo Batista - Ejecutivo Segmento Staff - <span style="color:red;">321-9316</span> ext. 29316 - iraldo.batista@banistmo.com<br />
+                    <br> Daniela I. Arnaez - Ejecutivo Segmento Staff - <span style="color:red;">321-8453</span> ext. 28453 - daniela.arnaez@banistmo.com<br />
+                    <br> Ninohska Bultrón - Ejecutivo Segmento Staff - <span style="color:red;">321-9313</span> ext. 29313 - ninohska.bultron@banistmo.com<br />
+                </p>
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <div class="form-group" ng-click="showTwo()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                ¿Dónde esta ubicado?
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show2===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show2===true"></i>
+            </div>
+            <div class="form-group" ng-show="show2" style="color:black; padding-top:10px; padding-left: 16px; padding-right: 16px;">
+                <p>Nos ubicamos en el Soho Casa Matriz, Piso 8, Sector B, fila 71 – 76. </p>
+
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <div class="form-group" ng-click="showThree()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                ¿Sabes cómo solicitar productos?
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show3===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show3===true"></i>
+            </div>
+            <div class="form-group" ng-show="show3" style="color:black; padding-top:10px; padding-left: 16px; padding-right: 16px;">
+                <p>
+                    Estos son las manera en las que puedes contactarnos para adquirir productos con los excelentes beneficios que te ofrecemos como colaborador y extensivo a familiares:
+                    <br> Llama a la extensión 27352 ó 321-7352, y consulta el producto que deseas.
+                    <br> Escríbenos a la dirección: segmento_staff@banistmo.com, detállanos tu solicitud y te asignaremos un ejecutivo que se pondrá en contacto contigo.
+                    <br> Luego podrás programar la cita con el ejecutivo, ya que contamos con el salón Rio Abajo en el Piso 8 para atenderte.
+
+
+                </p>
+                <p>Recuerda que los familiares que pueden obtener los beneficios son:</p>
+                <ul>
+                    <li> - Padre y madre</li>
+                    <li> - Hijos</li>
+                    <li> - Hermanos</li>
+                    <li> - Cónyuge</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <div class="form-group" ng-click="showFour()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Préstamo Hipotecario
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show4===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show4===true"></i>
+            </div>
+            <div class="form-group" ng-show="show4" style="color:black; padding-top:10px; padding-left: 16px; padding-right: 16px;">
+
+                <div style="text-decoration: underline;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Colaboradores </div>
+                <p>Tasa de interés 3.00%</p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Requisitos: </div>
+                <p>
+                    Debes contar con 6 meses de labores dentro de la organización
+                    <br> Buenas Referencias de Crédito
+                    <br> Capacidad de endeudamiento dentro de lo permitido
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos Requeridos: </div>
+                <p>
+                    Solicitud de Préstamo Hipotecario completa y firmada
+                    <br> Copia de identificación legal
+                    <br> Carta de autorización de APC
+                    <br> Proforma de la propiedad
+                    <br> Avaluó de la propiedad
+                    <br> Copia de las escrituras (en caso que aplique)
+                </p>
+
+                <div style="text-decoration: underline;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Familiares </div>
+                <p>Tasa de interés 3.95%</p>
+
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Requisitos: </div>
+                <p>
+                    12 Meses en el empleo actual ó 3 meses en el empleo actual y una continuidad de 12 meses en el empleo anterior
+                    <br> Buenas Referencias de Crédito
+                    <br> Capacidad de endeudamiento dentro de lo permitido
+                    <br> Asalariados aplica el mínimo, Independientes B/. 1,500.00
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos Requeridos: </div>
+                <p>
+                    Solicitud de Préstamo Hipotecario completa y firmada
+                    <br> Copia de identificación legal
+                    <br> Evidencia de Ingresos
+                    <br> Copia de ficha
+                    <br> Carta de autorización de APC
+                    <br> Proforma y avaluó de la propiedad (en caso que aplique)
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Formularios: </div>
+
+                
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/segmento-staff/solicitud-de-prestamo-hipotecario.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Solicitud de Préstamo Hipotecario</div>
+                </div>
+                <p>Todos los requisitos y documentos serán sujeto a verificación de políticas.</p>
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <div class="form-group" ng-click="showFive()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Préstamo Personal
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show5===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show5===true"></i>
+            </div>
+            <div class="form-group" ng-show="show5" style="color:black; padding-top:10px; padding-left: 16px; padding-right: 16px;">
+
+                <div style="text-decoration: underline;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Colaboradores </div>
+                <p>Tasa de interés 6.00%</p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Requisitos: </div>
+                <p>
+                    Desde el primer día de servicio, siempre y cuando seas contrato indefinido.
+                    <br> Buenas Referencias de Crédito.
+                    <br> Capacidad de endeudamiento dentro de lo permitido.
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos Requeridos: </div>
+                <p>
+                    Solicitud de Préstamo Personal completa y firmada
+                    <br> Copia de identificación legal
+                    <br> Carta de autorización de APC
+                    <br> Carta de saldo (en caso que aplique).
+
+                </p>
+
+                <div style="text-decoration: underline;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Familiares </div>
+                <p>Tasa de interés 7.50%</p>
+
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Requisitos: </div>
+                <p>
+                    24 meses en el empleo actual ó 12 meses en empleo actual y una continuidad de 12 meses en el empleo anterior.
+                    <br> Buenas Referencias de Crédito
+                    <br> Capacidad de endeudamiento dentro de lo permitido
+                    <br> Salario de 450.00 (Privado), B/. 800.00 (ACP) Independientes no aplican
+
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos Requeridos: </div>
+                <p>
+                    Solicitud de Préstamo Personal completa y firmada
+                    <br> Copia de identificación legal
+                    <br> Evidencia de Ingresos
+                    <br> Copia de ficha
+                    <br> Carta de autorización de APC
+                    <br> Carta de Saldo (en caso que aplique)
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Formularios: </div>
+                            
+                
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/segmento-staff/solicitud-de-prestamo-personal.pdf")'>
+                        <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Solicitud de Préstamo Personal</div>
+                </div>
+                                                         
+                <p>Todos los requisitos y documentos serán sujeto a verificación de políticas.</p>
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <div class="form-group" ng-click="showSix()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Tarjeta de Crédito
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show6===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show6===true"></i>
+            </div>
+            <div class="form-group" ng-show="show6" style="color:black; padding-top:10px; padding-left: 16px; padding-right: 16px;">
+
+                <div style="text-decoration: underline;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Colaboradores </div>
+                <p>Tasa de interés 8.00%</p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Requisitos: </div>
+                <p>
+                    Desde el primer día de servicio, siempre y cuando seas contrato indefinido.
+                    <br> Buenas Referencias de Crédito
+                    <br> Capacidad de endeudamiento dentro de lo permitido
+
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos Requeridos: </div>
+                <p>
+                    Solicitud de Tarjeta de Crédito completa y firmada
+                    <br> Copia de identificación legal
+                    <br> Carta de autorización de APC
+                    <br> Contrato firmado
+                    <br> 2 órdenes de descuento en blanco
+                    <br> Formulario de seguro colectivo
+
+
+                </p>
+
+                <div style="text-decoration: underline;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Familiares </div>
+                <p>Tasa de interés 11.00%</p>
+
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Requisitos: </div>
+                <p>
+                    6 meses en el empleo actual
+                    <br> Buenas Referencias de Crédito
+                    <br> Capacidad de endeudamiento dentro de lo permitido
+                    <br> Salario de B/. 500.00, Independientes B/. 2,000.00
+
+
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos Requeridos: </div>
+                <p>
+                    Solicitud completa y firmada
+                    <br> Copia de identificación legal
+                    <br> Evidencia de Ingresos
+                    <br> Copia de ficha
+                    <br> Carta de autorización de APC
+                    <br> Contrato firmado
+                    <br> 2 órdenes de descuento en blanco
+                    <br> Formulario de seguro colectivo
+
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Formularios: </div>
+                
+                <div class="row">
+
+                  <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/segmento-staff/contrato-detarjeta-de-credito.pdf")'>
+                 <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Contrato de Tarjeta de Crédito
+                </div>
+                </div>
+                 
+                 <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/segmento-staff/carta-de-descuento-tarjeta-de-credito.pdf")'>
+                    <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Cartas de Descuento Tarjetas de Crédito
+                </div>
+               </div>                         
+                       
+                <div class="row">
+
+                    <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/segmento-staff/solicitud-digital-de-tarjeta-de-credito.pdf")'>
+                    <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Solicitud Digital de Tarjetas de Crédito
+                </div>     
+                </div>
+                 
+                <div class="row">
+
+                <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/segmento-staff/formulario-compra-de-saldo-y-tarjeta-adicional.pdf")'>
+                    <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Formulario Compra de Saldo y Tarjetas Adicionales
+                </div>  </div>                   
+                   
+                <p>Todos los requisitos y documentos serán sujeto a verificación de políticas.</p>
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <div class="form-group" ng-click="showSeven()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+                Préstamo de Auto
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show7===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show7===true"></i>
+            </div>
+            <div class="form-group" ng-show="show7" style="color:black; padding-top:10px; padding-left: 16px; padding-right: 16px;">
+
+                <div style="text-decoration: underline;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Colaboradores </div>
+                <p>Tasa de interés 4.00% + 1% FECI</p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Requisitos: </div>
+                <p>
+                    Debes contar con 6 meses de labores dentro de la organización.
+                    <br> Buenas Referencias de Crédito
+                    <br> Capacidad de endeudamiento dentro de lo permitido
+
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos Requeridos: </div>
+                <p>
+                    Solicitud de Préstamo de Auto completa y firmada
+                    <br> Copia de identificación legal
+                    <br> Copia de licencia de conducir
+                    <br> Copia de recibo público
+                    <br> Carta de autorización de APC
+                    <br> Proforma del auto o Avaluó en el caso que aplique
+
+
+                </p>
+
+                <div style="text-decoration: underline;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Familiares </div>
+                <p>Tasa de interés 5.00 + 1% FECI</p>
+
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Requisitos: </div>
+                <p>
+                    12 meses en el empleo actual ó 6 meses en empleo actual y una continuidad de 12 meses en el empleo anterior
+                    <br> Buenas Referencias de Crédito
+                    <br> Capacidad de endeudamiento dentro de lo permitido
+                    <br> Salario de B/750.00 (Privado), B/.800(ACP), B/.2,000.00 (Independientes)
+
+
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos Requeridos: </div>
+                <p>
+                    Solicitud de Préstamo de auto completa y firmada
+                    <br> Copia de identificación legal
+                    <br> Evidencia de Ingresos
+                    <br> Copia de ficha
+                    <br> Copia de Licencia de conducir
+                    <br> Copia de recibo público
+                    <br> Carta de autorización de APC
+                    <br> Proforma del auto
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Formularios: </div>
+
+                
+                <div class="row">
+
+                <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/segmento-staff/solicitud-de-auto.pdf")'>
+                    <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Solicitud de Autos
+                </div> 
+                           
+                </div>                
+                <p>Todos los requisitos y documentos serán sujeto a verificación de políticas.</p>
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <div class="form-group" ng-click="showeight()" style="background-color: #1f497d;color: white;height: 38px;padding-top: 8px;padding-left: 6%;">
+              Leasing
+                <i class="icon ion-plus-round" style="float: right;padding-right: 5%;" ng-show="show8===false"></i>
+                <i class="icon ion-minus-round" style="float: right;padding-right: 5%;" ng-show="show8===true"></i>
+            </div>
+            <div class="form-group" ng-show="show8" style="color:black; padding-top:10px; padding-left: 16px; padding-right: 16px;">
+
+                <div style="text-decoration: underline;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Colaboradores </div>
+                <p>Tasa de interés 4.00%. Haz clic aquí para saber más.</p>
+
+                
+                
+                    <div class="row">
+
+                <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/segmento-staff/Revision-de-tarifas-colaborador-Autos.pdf")'>
+                    <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Revisión de tarifas colaborador Autos
+                </div>
+                           
+                </div>                
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Requisitos: </div>
+                <p>
+                    12 meses con el grupo ó 3 meses de Estabilidad laboral más continuidad de un año en el empleo anterior
+                    <br> Buenas Referencias de Crédito
+                    <br> Capacidad de endeudamiento dentro de lo permitido
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos Requeridos: </div>
+                <p>
+                    Solicitud de Leasing completa y firmada
+                    <br> Copia de identificación legal
+                    <br> Copia de licencia de conducir
+                    <br> Copia de recibo público
+                    <br> Proforma del auto o Avaluó en el caso que aplique
+
+
+
+                </p>
+
+                <div style="text-decoration: underline;font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Familiares </div>
+                <p>Tasa de interés 5.00%</p>
+
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Requisitos: </div>
+                <p>
+                    12 meses en el empleo actual ó 6 meses en empleo actual y una continuidad de 12 meses en el empleo anterior
+                    <br> Buenas Referencias de Crédito
+                    <br> Capacidad de endeudamiento dentro de lo permitido
+                    <br> Salario de B/750.00 (Privado), B/.800(ACP), B/.2,000.00 (Independientes)
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Documentos Requeridos: </div>
+                <p>
+                    Solicitud de Leasing completa y firmada
+                    <br> Copia de identificación legal
+                    <br> Evidencia de Ingresos
+                    <br> Copia de ficha
+                    <br> Copia de licencia de conducir
+                    <br> Copia de recibo público
+                    <br> Proforma del auto
+
+
+                </p>
+
+                <div style="font-size: 15px;letter-spacing: -1px;font-size: 20px;font-weight: 600;">Formularios: </div>
+<br/>
+               
+               <div class="row">
+
+                <div style="box-shadow:1px 1px 1px 1px #d6d6d6; width:100%;padding:8px;font-size:15px;" ng-click='download("http://gotbizonline.com/banistmo/files/segmento-staff/solicitud-de-leasing.pdf")'>
+                    <img src="img/attachment-icon.png" style="height: 21px; text-align:center; margin-right:20px;">Solicitud de Leasing
+                </div>
+   
+                </div>
+
+            </div>
+        </div>
+        <br>
+
+
+
+
+
+    </ion-content>
+</ion-view>

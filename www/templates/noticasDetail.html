@@ -1,0 +1,62 @@
+<ion-view view-title="{{detailData[0].title}}">
+
+  <ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="goBack()">
+      <i class="icon ion-arrow-left-b"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons button-clear header-item"  style="color: #00428a;" ng-click="gomenuPage()">
+      <i class="icon ion-navicon-round"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <div class="card" ng-repeat="data in detailData">
+
+        <ion-item class="item-remove-animate item-avatar"  type="item-text-wrap" style="border-bottom: none;">
+          <img src="img/icon-banistmo.png" class="imgStyle">
+          <div class="row rowStyle">
+            <div class="col col-75">
+              <h3>COnectados Banistmo</h3>
+             <!-- <h3>Un detalle para llenar tumesa de son....</h3> original -->
+            </div>
+            <div class="col alignRightDiv"></div>
+          </div>
+        </ion-item>
+        <!--<div style="padding-left: 17px;">Tu participacion es importance</div><br/> original-->
+        <div style="padding-left: 40px;">{{data.date | date:'dd/MM/yyyy'}}</div><br/>
+        <div>
+          <img ng-src="{{data.image}}" class="coupenImgStyle imgHeight" style="margin-top: 0px;border-bottom: none;height: 100%;" onError="this.src='img/beneficos.png'">
+          <!-- height: 150px; -->
+        </div>
+
+      <p style="padding: 12px;padding-top: 12px;text-align: justify;">{{data.content}}</p><br/>
+
+     <!-- <p style="padding-left: 12px;padding-top: 12px;">{{data.content}}</p><br/> original>
+      <!--<div class="row">
+        <div class="col">Dia: 14 de entro</div>
+      </div>
+      <div class="row">
+        <div class="col">Lugar: Las Tablas Provincias de los Santos</div>
+      </div>
+      <div class="row">
+        <div class="col">Hora de Salida: 6:00 a.m. Torre Banistmo Casa Matriz Calle 50</div>
+      </div>
+      <div class="row">
+        <div class="col">Hora de Regreso: 8:00 p.m.(hay transporte gratis para ti) Hay 60 cupos disponibles ,para tu reservacion escribe al</div>
+      </div>
+      <div class="row">
+        <div class="col">buzon: GH_Calidad de Vida</div>
+      </div> original -->
+
+      <!-- <h4 style="padding-left: 45px;" ng-click="goCommentPage()">Comment</h4>
+      <h4 style="padding-left: 45px;" ng-click="like()">Like</h4>
+      <div style="padding-left: 17px;">No Comments for now</div><br/> -->
+
+   </div>
+
+  </ion-content>
+
+</ion-view>
